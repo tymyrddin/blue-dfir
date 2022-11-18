@@ -10,3 +10,11 @@ Volatility is wildly expandable via a plugins system and an invaluable tool for 
 
 ## How?
 
+* Memory Extraction
+* Plugins Overview
+* Identifying Image Info and Profiles
+* Listing Processes and Connections
+* Volatility Hunting and Detection Capabilities
+* Advanced Memory Forensics
+* Practical Investigations
+
