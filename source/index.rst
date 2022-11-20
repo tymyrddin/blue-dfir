@@ -17,6 +17,15 @@ Incident response and forensics
    docs/volatility/investigations.md
 
 .. toctree::
+   :glob:
+   :maxdepth: 1
+   :includehidden:
+   :caption: Windows forensics
+
+   docs/windows/README.md
+   docs/windows/investigation.md
+
+.. toctree::
    :caption: Links
 
    Blue Team <https://tymyrddin.github.io/blue/>
