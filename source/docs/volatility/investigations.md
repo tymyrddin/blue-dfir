@@ -107,7 +107,7 @@ User-Agent:
 thmanalyst@ubuntu:~$ 
 ```
 
-Was Chase Bank one of the suspicious bank domains found in Case 001?
+Was Chase Bank one of the suspicious bank domains found?
 
 ```text
 thmanalyst@ubuntu:~$ strings *.dmp | grep "chase"
