@@ -1,3 +1,7 @@
+| ![Volatility](../../_static/images/volatility-room-banner.png)
+|:--:|
+| [THM Room: Volatility](https://tryhackme.com/room/volatility) |
+
 # Introduction
 
 ## What?
