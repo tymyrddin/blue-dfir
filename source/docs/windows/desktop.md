@@ -42,9 +42,9 @@ Answer: `count`
 
 | ![SOFTWARE Devices](../../_static/images/software-devices.png)
 |:--:|
-| Get the GUID. |
+| Get the `GUID`. |
 
-Load the `SYSTEM` hive and clean it:
+Load the `SYSTEM` hive and clean it. Look up the `GUID` in `USBSTOR`:
 
 | ![SYSTEM USBSTOR](../../_static/images/system-usbstor.png)
 |:--:|
