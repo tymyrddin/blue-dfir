@@ -23,7 +23,8 @@ Incident response and forensics
    :caption: Windows forensics
 
    docs/windows/README.md
-   docs/windows/investigation.md
+   docs/windows/server.md
+   docs/windows/desktop.md
 
 .. toctree::
    :caption: Links
