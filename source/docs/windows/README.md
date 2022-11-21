@@ -15,4 +15,4 @@ Gathering evidence of activities.
 ## How?
 
 * [A Windows server](server.md)
-* [Organization X desktop](desktop.md)
+* [Organisation X desktop](desktop.md)

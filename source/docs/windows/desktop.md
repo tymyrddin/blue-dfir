@@ -1,10 +1,10 @@
-# Organization X desktop
+# Organisation X desktop
 
-One of the Desktops in the research lab at Organization X is suspected to have been accessed by someone unauthorized. 
+One of the Desktops in the research lab at Organisation X is suspected to have been accessed by someone unauthorized. 
 Although they generally have only one user account per Desktop, there were multiple user accounts observed on this 
 system. It is also suspected that the system was connected to some network drive, and a USB device was connected to 
 the system. The triage data from the system was collected and placed on the attached VM. Can you help 
-Organization X with finding answers to the below questions?
+Organisation X with finding answers to the below questions?
 
 Note: When loading registry hives in RegistryExplorer, it will caution us that the hives are dirty. Point 
 `RegistryExplorer` to the `.LOG1` and `.LOG2` files with the same filename as the registry hive. It will automatically 
