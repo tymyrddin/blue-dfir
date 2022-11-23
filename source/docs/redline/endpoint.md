@@ -52,3 +52,7 @@ Answer: `fe1bc60a95b2c2d77cd5d232296a7fa4`
 |:--:|
 | Answer: `Cerber` |
 
+## Resources
+
+* [Redline User Guide](https://www.fireeye.com/content/dam/fireeye-www/services/freeware/ug-redline.pdf)
+

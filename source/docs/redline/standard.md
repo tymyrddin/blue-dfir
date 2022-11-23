@@ -49,3 +49,8 @@ Answer: `C:\Program Files (x86)\Windows Mail\SomeMailFolder\flag.txt`
 Go there and open it in `Notepad`:
 
 Answer: `THM{600D-C@7cH-My-FR1EnD}`
+
+## Resources
+
+* [Redline User Guide](https://www.fireeye.com/content/dam/fireeye-www/services/freeware/ug-redline.pdf)
+

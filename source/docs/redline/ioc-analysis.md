@@ -53,3 +53,9 @@ Answer: `57492d33b7c0755bb411b22d2dfdfdf088cbbfcd010e30dd8d425d5fe66adff4`
 |:--:|
 | Answer: `psexec.exe` |
 
+
+## Resources
+
+* [Redline User Guide](https://www.fireeye.com/content/dam/fireeye-www/services/freeware/ug-redline.pdf)
+* [IOC Editor User Guide](https://www.fireeye.com/content/dam/fireeye-www/services/freeware/ug-ioc-editor.pdf)
+
