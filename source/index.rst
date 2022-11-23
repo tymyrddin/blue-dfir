@@ -1,8 +1,8 @@
 Incident response and forensics
 ===========================================================
 
-.. image:: _static/images/in-progress.png
-  :alt: In progress ...
+Memory forensics ties into many disciplines in cyber investigations. From the classical investigations that focus on
+user artifacts via malware analysis to large-scale hunting, memory forensic has applications in Security Operations.
 
 .. toctree::
    :glob:
