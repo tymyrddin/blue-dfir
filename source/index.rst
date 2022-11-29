@@ -1,4 +1,4 @@
-Incident response and forensics
+Digital forensics and incident response
 ===========================================================
 
 Memory forensics ties into many disciplines in cyber investigations. From the classical investigations that focus on

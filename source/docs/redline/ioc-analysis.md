@@ -43,7 +43,7 @@ Answer: `\Device\HarddiskVolume2`
 
 **Provide the hash (SHA-256) for the file.**
 
-Use the `Get-FileHash` command:
+Use the `Get-FileHash` command.
 
 Answer: `57492d33b7c0755bb411b22d2dfdfdf088cbbfcd010e30dd8d425d5fe66adff4`
 
@@ -52,7 +52,6 @@ Answer: `57492d33b7c0755bb411b22d2dfdfdf088cbbfcd010e30dd8d425d5fe66adff4`
 | ![VirusTotal](../../_static/images/redline-checkhash.png)
 |:--:|
 | Answer: `psexec.exe` |
-
 
 ## Resources
 
