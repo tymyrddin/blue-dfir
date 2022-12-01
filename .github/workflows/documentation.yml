@@ -1,4 +1,4 @@
-name: Publish blue-ir using Sphinx
+name: Publish blue-dfir using Sphinx
 
 on:
   push:
