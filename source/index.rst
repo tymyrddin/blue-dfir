@@ -2,7 +2,8 @@ Digital forensics and incident response
 ===========================================================
 
 Memory forensics ties into many disciplines in cyber investigations. From the classical investigations that focus on
-user artifacts via malware analysis to large-scale hunting, memory forensics has applications in security operations.
+user artifacts via malware analysis to large-scale hunting, memory forensics has many applications in security
+operations.
 
 .. toctree::
    :glob:
@@ -25,6 +26,14 @@ user artifacts via malware analysis to large-scale hunting, memory forensics has
    docs/windows/README.md
    docs/windows/server.md
    docs/windows/desktop.md
+
+.. toctree::
+   :glob:
+   :maxdepth: 1
+   :includehidden:
+   :caption: Linux forensics
+
+   docs/linux/README.md
 
 .. toctree::
    :glob:
