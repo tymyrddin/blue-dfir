@@ -10,7 +10,7 @@ KAPE serves two primary purposes, 1) collect files and 2) process the collected 
 
 ## Target options
 
-In KAPE's lexicon, "Targets" (`.tkape`) are the artifacts that need to be collected from a system or image and copied to our provided destination. For example, Windows `Prefetch` is a forensic artifact for evidence of execution so that we can create a Target for it. Similarly, we can also create targets for the registry hives. In short, targets copy files from one place to another.
+In KAPE's lexicon, "Targets" (`.tkape`) are the artifacts that need to be collected from a system or image and copied to our provided destination. For example, Windows `Prefetch` is a forensic artifact for evidence of execution so that we can create a Target for it. Similarly, we can also create targets for the registry hives. In short, targets copy files from one place to another.
 
 KAPE also supports Compound Targets. KAPE is often used for quick triage collection and analysis. The purpose of KAPE will not be fulfilled if we have to collect each artifact individually. Compound Targets help collect multiple targets by giving a single command. Examples of Compound Targets include `!BasicCollection`, `!SANS_triage` and `KAPEtriage`. The Compound Targets are on the path `KAPE\Targets\Compound`. 
 

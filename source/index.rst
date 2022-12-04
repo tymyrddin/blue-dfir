@@ -58,6 +58,7 @@ operations.
 
    docs/kape/README.md
    docs/kape/nutshell.md
+   docs/kape/challenge.md
 
 .. toctree::
    :glob:

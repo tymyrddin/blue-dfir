@@ -15,3 +15,4 @@ In many cases, a forensic investigator doesn't have the luxury to perform manual
 ## How?
 
 * [KAPE in a nutshell](nutshell.md)
+* [Acceptable Use Policy violation](challenge.md)
