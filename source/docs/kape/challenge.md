@@ -14,24 +14,24 @@ Answer the questions below
 
 **Two USB Mass Storage devices were attached to this Virtual Machine. One had a Serial Number  0123456789ABCDE. What is the Serial Number of the other USB Device?**
 
-Answer: ``
+Answer: `1C6F654E59A3B0C179D366AE`
 
 **7zip, Google Chrome and Mozilla Firefox were installed from a Network drive location on the Virtual Machine. What was the drive letter and path of the directory from where these software were installed?**
 
-Answer: ``
+Answer: `Z:\Setups`
 
 **What is the execution date and time of CHROMESETUP.EXE in MM/DD/YYYY HH:MM?**
 
-Answer: ``
+Answer: `11/25/2021 03:33`
 
 **What search query was run on the system?**
 
-Answer: ``
+Answer: `RunWallpaperSetup.cmd`
 
 **When was the network named Network 3 First connected to?**
 
-Answer: ``
+Answer: `11/30/2021 15:44`
 
 **KAPE was copied from a removable drive. Can you find out what was the drive letter of the drive where KAPE was copied from?**
 
-Answer: ``
+Answer: `E:`
