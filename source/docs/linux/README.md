@@ -14,4 +14,6 @@ Gathering evidence of activities.
 
 ## How?
 
-
+* [Persistence mechanisms](persistence.md)
+* [Evidence of execution](execution.md)
+* [Logs](logs.md)

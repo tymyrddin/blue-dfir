@@ -34,6 +34,9 @@ operations.
    :caption: Linux forensics
 
    docs/linux/README.md
+   docs/linux/persistence.md
+   docs/linux/execution.md
+   docs/linux/logs.md
 
 .. toctree::
    :glob:
@@ -46,6 +49,15 @@ operations.
    docs/redline/ioc-collector.md
    docs/redline/ioc-analysis.md
    docs/redline/endpoint.md
+
+.. toctree::
+   :glob:
+   :maxdepth: 1
+   :includehidden:
+   :caption: KAPE
+
+   docs/kape/README.md
+   docs/kape/nutshell.md
 
 .. toctree::
    :glob:
