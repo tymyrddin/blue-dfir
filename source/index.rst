@@ -9,18 +9,6 @@ operations.
    :glob:
    :maxdepth: 1
    :includehidden:
-   :caption: Volatility
-
-   docs/volatility/README.md
-   docs/volatility/extraction.md
-   docs/volatility/usage.md
-   docs/volatility/evasions.md
-   docs/volatility/investigations.md
-
-.. toctree::
-   :glob:
-   :maxdepth: 1
-   :includehidden:
    :caption: Windows forensics
 
    docs/windows/README.md
@@ -37,6 +25,16 @@ operations.
    docs/linux/persistence.md
    docs/linux/execution.md
    docs/linux/logs.md
+
+.. toctree::
+   :glob:
+   :maxdepth: 1
+   :includehidden:
+   :caption: Autopsy
+
+   docs/autopsy/README.md
+   docs/autopsy/leaky.md
+   docs/autopsy/windows10.md
 
 .. toctree::
    :glob:
@@ -64,11 +62,23 @@ operations.
    :glob:
    :maxdepth: 1
    :includehidden:
-   :caption: Autopsy
+   :caption: Volatility
 
-   docs/autopsy/README.md
-   docs/autopsy/leaky.md
-   docs/autopsy/windows10.md
+   docs/volatility/README.md
+   docs/volatility/extraction.md
+   docs/volatility/usage.md
+   docs/volatility/evasions.md
+   docs/volatility/investigations.md
+
+.. toctree::
+   :glob:
+   :maxdepth: 1
+   :includehidden:
+   :caption: Velociraptor
+
+   docs/velociraptor/README.md
+   docs/velociraptor/nutshell.md
+   docs/velociraptor/challenge.md
 
 .. toctree::
    :caption: Links
