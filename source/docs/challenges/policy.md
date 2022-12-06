@@ -1,4 +1,4 @@
-| ![KAPE](../../_static/images/windows-room-banner.png)
+| ![KAPE](../../_static/images/forensics-room-banner.png)
 |:--:|
 | [THM Room: KAPE](https://tryhackme.com/room/kape) |
 
@@ -24,7 +24,7 @@ Answer: `1C6F654E59A3B0C179D366AE`
 
 Answer: `Z:\Setups`
 
-**What is the execution date and time of CHROMESETUP.EXE in MM/DD/YYYY HH:MM?**
+**What is the execution date and time of CHROME-SETUP.EXE in MM/DD/YYYY HH:MM?**
 
 Answer: `11/25/2021 03:33`
 

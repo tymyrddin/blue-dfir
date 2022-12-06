@@ -2,11 +2,11 @@
 
 ## What?
 
-DFIR tools in a nutshell.
+Automating the evidence collection, sanitization, and processing part of forensics.
 
 ## Why?
 
-brief and to the point, with links to resources.
+In many cases, a forensic investigator doesn't have the luxury to perform manual analysis, which can be time-consuming.
 
 ## How?
 

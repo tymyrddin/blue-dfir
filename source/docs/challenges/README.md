@@ -3,11 +3,11 @@
 
 ## What?
 
-Automating the evidence collection, sanitization, and processing part of Windows forensics.
+Challenges.
 
 ## Why?
 
-In many cases, a forensic investigator doesn't have the luxury to perform manual analysis, which can be time-consuming.
+Practicing.
 
 ## How?
 
