@@ -58,7 +58,7 @@ operations.
    :caption: Challenges
 
    docs/challenges/README.md
-   docs/challenges/leaky1.md
+   docs/challenges/leaky.md
    docs/challenges/windows10.md
    docs/challenges/policy.md
    docs/challenges/bob.md
