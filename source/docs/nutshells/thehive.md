@@ -10,3 +10,7 @@ TheHive allows analysts from one organisation to work together on the same case 
 * Built-in MISP Integration: Another useful integration is with MISP, a threat intelligence platform for sharing, storing and correlating Indicators of Compromise of targeted attacks and other threats. This integration allows analysts to create cases from MISP events, import IOCs or export their own identified indicators to their MISP communities.
 
 Other notable integrations that TheHive supports are DigitalShadows2TH & ZeroFox2TH, free and open-source extensions of alert feeders from DigitalShadows and ZeroFox respectively. These integrations ensure that alerts can be added into TheHive and transformed into new cases using pre-defined incident response templates or by adding to existing cases.
+
+## Resources
+
+* [TheHive Project](https://thehive-project.org/)
