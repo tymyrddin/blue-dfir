@@ -1,3 +1,7 @@
+| ![Autopsy](../../_static/images/autopsy-room-banner.png)
+|:--:|
+| [THM Rooms: Autopsy (1 and 2)](https://tryhackme.com/room/autopsy2ze0) |
+
 # Windows 10 disk image
 
 In the attached VM, there is an Autopsy case file and its corresponding disk image. After loading the `.aut` file, 

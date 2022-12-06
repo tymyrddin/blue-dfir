@@ -30,16 +30,6 @@ operations.
    :glob:
    :maxdepth: 1
    :includehidden:
-   :caption: Autopsy
-
-   docs/autopsy/README.md
-   docs/autopsy/leaky.md
-   docs/autopsy/windows10.md
-
-.. toctree::
-   :glob:
-   :maxdepth: 1
-   :includehidden:
    :caption: RedLine
 
    docs/redline/README.md
@@ -52,33 +42,28 @@ operations.
    :glob:
    :maxdepth: 1
    :includehidden:
-   :caption: KAPE
+   :caption: Tools in a nutshell
 
-   docs/kape/README.md
-   docs/kape/nutshell.md
-   docs/kape/challenge.md
-
-.. toctree::
-   :glob:
-   :maxdepth: 1
-   :includehidden:
-   :caption: Volatility
-
-   docs/volatility/README.md
-   docs/volatility/extraction.md
-   docs/volatility/usage.md
-   docs/volatility/evasions.md
-   docs/volatility/investigations.md
+   docs/nutshells/README.md
+   docs/nutshells/autopsy.md
+   docs/nutshells/kape.md
+   docs/nutshells/volatility.md
+   docs/nutshells/velociraptor.md
+   docs/nutshells/thehive.md
 
 .. toctree::
    :glob:
    :maxdepth: 1
    :includehidden:
-   :caption: Velociraptor
+   :caption: Challenges
 
-   docs/velociraptor/README.md
-   docs/velociraptor/nutshell.md
-   docs/velociraptor/challenge.md
+   docs/challenges/README.md
+   docs/challenges/leaky1.md
+   docs/challenges/windows10.md
+   docs/challenges/policy.md
+   docs/challenges/bob.md
+   docs/challenges/feelings.md
+   docs/challenges/nightmare.md
 
 .. toctree::
    :caption: Links

@@ -1,3 +1,7 @@
+| ![KAPE](../../_static/images/windows-room-banner.png)
+|:--:|
+| [THM Room: KAPE](https://tryhackme.com/room/kape) |
+
 # Acceptable Use Policy violation
 
 Organization X has an Acceptable Use Policy for their Portable Devices, including Laptops. This policy forbids users 

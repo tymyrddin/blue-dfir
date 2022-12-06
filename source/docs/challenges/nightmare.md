@@ -1,3 +1,7 @@
+| ![Velociraptor](../../_static/images/velociraptor-room-banner.png)
+|:--:|
+| [THM Room: Velociraptor](https://tryhackme.com/room/velociraptorhp) |
+
 # Hunt for a nightmare
 
 Objective: Use Velociraptor to create an artifact to detect the PrintNightmare vulnerability!

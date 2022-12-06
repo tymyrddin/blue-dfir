@@ -1,4 +1,8 @@
-# Leaking private company data
+| ![Autopsy](../../_static/images/autopsy-room-banner.png)
+|:--:|
+| [THM Rooms: Autopsy (1 and 2)](https://tryhackme.com/room/autopsy2ze0) |
+
+# Leaking private company data (again)
 
 **What is the name of an Installed Program with the version number of 6.2.0.2962?**
 

@@ -12,7 +12,7 @@ At the date of the entry of this content, the categories surrounding forensic an
 * Event Logs
 * Volatile Machine State
 
-Have a skim through `Searching Filenames` and `NTFS Analysis` to provide a solid brain dump to prep for the [Nightmare](challenge.md).
+Have a skim through `Searching Filenames` and `NTFS Analysis` to provide a solid brain dump to prep for the [Nightmare](../challenges/nightmare.md).
 
 ## Resources
 
