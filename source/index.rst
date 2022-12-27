@@ -5,6 +5,13 @@ Memory forensics ties into many disciplines in cyber investigations. From the cl
 user artifacts via malware analysis to large-scale hunting, memory forensics has many applications in security
 operations.
 
+----
+
+.. image:: _static/images/ir-books.png
+  :alt: Useful books
+
+----
+
 .. toctree::
    :glob:
    :maxdepth: 1
