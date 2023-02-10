@@ -1,14 +1,9 @@
-Digital forensics and incident response
+Digital forensics and incident response (DFIR)
 ===========================================================
 
 Memory forensics ties into many disciplines in cyber investigations. From the classical investigations that focus on
 user artifacts via malware analysis to large-scale hunting, memory forensics has many applications in security
 operations.
-
-----
-
-.. image:: _static/images/ir-books.png
-  :alt: Useful books
 
 ----
 
@@ -72,7 +67,7 @@ operations.
    docs/challenges/feelings.md
    docs/challenges/nightmare.md
 
-.. toctree::
-   :caption: Links
+----
 
-   Blue Team <https://blue.tymyrddin.dev/>
+.. image:: _static/images/ir-books.png
+  :alt: Useful books
