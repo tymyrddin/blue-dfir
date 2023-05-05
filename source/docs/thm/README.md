@@ -3,7 +3,7 @@
 
 ## What?
 
-Challenges.
+TryHackMe challenges.
 
 ## Why?
 
@@ -11,6 +11,12 @@ Practicing.
 
 ## How?
 
+* [A Windows server](server.md)
+* [Organisation X desktop](desktop.md)
+* [Standard Collector Analysis](standard.md)
+* [IOC Search Collector](ioc-collector.md)
+* [IOC Search Collector Analysis](ioc-analysis.md)
+* [Endpoint investigation](endpoint.md)
 * [Leaking private company data (again)](leaky.md)
 * [Windows 10 disk image](windows10.md)
 * [Acceptable Use Policy violation](policy.md)

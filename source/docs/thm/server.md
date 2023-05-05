@@ -1,3 +1,7 @@
+| ![Windows forensics](../../_static/images/forensics-room-banner.png)
+|:--:|
+| [THM Room: Windows Forensics](https://tryhackme.com/room/windowsforensics1) |
+
 # A Windows server
 
 **What is the version and year of the Windows machine?**

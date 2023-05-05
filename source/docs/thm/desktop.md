@@ -1,3 +1,7 @@
+| ![Windows forensics](../../_static/images/forensics-room-banner.png)
+|:--:|
+| [THM Room: Windows Forensics](https://tryhackme.com/room/windowsforensics1) |
+
 # Organisation X desktop
 
 One of the Desktops in the research lab at Organisation X is suspected to have been accessed by someone unauthorized. 

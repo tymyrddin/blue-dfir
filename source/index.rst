@@ -8,64 +8,40 @@ operations.
 ----
 
 .. toctree::
-   :glob:
    :maxdepth: 1
    :includehidden:
-   :caption: Windows forensics
+   :caption: Testlab
 
-   docs/windows/README.md
-   docs/windows/server.md
-   docs/windows/desktop.md
+   Forensics and incident response tools <https://blue.tymyrddin.dev/projects/testlab/en/latest/docs/dfir/README.html>
 
 .. toctree::
    :glob:
    :maxdepth: 1
    :includehidden:
-   :caption: Linux forensics
+   :caption: Notes on techniques
 
-   docs/linux/README.md
-   docs/linux/persistence.md
-   docs/linux/execution.md
-   docs/linux/logs.md
+   docs/notes/README.md
+   docs/notes/linux.md
 
-.. toctree::
-   :glob:
-   :maxdepth: 1
-   :includehidden:
-   :caption: RedLine
-
-   docs/redline/README.md
-   docs/redline/standard.md
-   docs/redline/ioc-collector.md
-   docs/redline/ioc-analysis.md
-   docs/redline/endpoint.md
+----
 
 .. toctree::
    :glob:
    :maxdepth: 1
    :includehidden:
-   :caption: Tools in a nutshell
+   :caption: TryHackMe rooms
 
-   docs/nutshells/README.md
-   docs/nutshells/autopsy.md
-   docs/nutshells/kape.md
-   docs/nutshells/volatility.md
-   docs/nutshells/velociraptor.md
-   docs/nutshells/thehive.md
-
-.. toctree::
-   :glob:
-   :maxdepth: 1
-   :includehidden:
-   :caption: Challenges
-
-   docs/challenges/README.md
-   docs/challenges/leaky.md
-   docs/challenges/windows10.md
-   docs/challenges/policy.md
-   docs/challenges/bob.md
-   docs/challenges/feelings.md
-   docs/challenges/nightmare.md
+   docs/thm/README.md
+   docs/thm/standard.md
+   docs/thm/ioc-collector.md
+   docs/thm/ioc-analysis.md
+   docs/thm/endpoint.md
+   docs/thm/leaky.md
+   docs/thm/windows10.md
+   docs/thm/policy.md
+   docs/thm/bob.md
+   docs/thm/feelings.md
+   docs/thm/nightmare.md
 
 ----
 
