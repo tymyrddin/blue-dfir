@@ -32,6 +32,8 @@ operations.
    :caption: TryHackMe rooms
 
    docs/thm/README.md
+   docs/thm/server.md
+   docs/thm/desktop.md
    docs/thm/standard.md
    docs/thm/ioc-collector.md
    docs/thm/ioc-analysis.md
