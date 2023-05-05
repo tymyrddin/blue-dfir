@@ -1,9 +1,9 @@
 Digital forensics and incident response (DFIR)
 ===========================================================
 
-Memory forensics ties into many disciplines in cyber investigations. From the classical investigations that focus on
-user artifacts via malware analysis to large-scale hunting, memory forensics has many applications in security
-operations.
+Memory forensics ties into many disciplines in cyber investigations. From the classical investigations that focus on user artifacts via malware analysis to large-scale hunting, memory forensics has many applications in security operations.
+
+Though DFIR is traditionally a reactive security function, tooling and advanced technology such as artificial intelligence (AI) and machine learning (ML), have enabled some organisations to leverage DFIR activity to influence and inform preventative measures. In such cases, making it a component within a proactive security strategy.
 
 ----
 
@@ -13,6 +13,8 @@ operations.
    :caption: Testlab
 
    Forensics and incident response tools <https://blue.tymyrddin.dev/projects/testlab/en/latest/docs/dfir/README.html>
+
+----
 
 .. toctree::
    :glob:
@@ -47,5 +49,5 @@ operations.
 
 ----
 
-.. image:: _static/images/ir-books.png
+.. image:: _static/images/books.png
   :alt: Useful books
