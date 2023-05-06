@@ -5,6 +5,9 @@ Memory forensics ties into many disciplines in cyber investigations. From the cl
 
 Though DFIR is traditionally a reactive security function, tooling and advanced technology such as artificial intelligence (AI) and machine learning (ML), have enabled some organisations to leverage DFIR activity to influence and inform preventative measures. In such cases, making it a component within a proactive security strategy.
 
+.. image:: _static/images/in-progress.png
+  :alt: Forever in progress ...
+
 ----
 
 .. toctree::
