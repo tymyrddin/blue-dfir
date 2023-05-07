@@ -52,5 +52,20 @@ Though DFIR is traditionally a reactive security function, tooling and advanced 
 
 ----
 
+.. toctree::
+   :glob:
+   :maxdepth: 1
+   :includehidden:
+   :caption: Root-me challenges
+
+   docs/root-me/README.md
+   docs/root-me/c&c2.md
+   docs/root-me/c&c5.md
+   docs/root-me/c&c3.md
+   docs/root-me/c&c4.md
+   docs/root-me/c&c6.md
+
+----
+
 .. image:: _static/images/books.png
   :alt: Useful books
