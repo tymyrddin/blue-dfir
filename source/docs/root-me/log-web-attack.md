@@ -36,7 +36,7 @@ SELECT (
 ) FROM membres WHERE id=1
 ```
 
-A blind sql injection attack, in which the attacker executes multiple queries separated by commas. `ASC` to display the list of members in order of largest to smallest, unrelated to the following query. From the select segment, the code to get the content of the password in the `mebres` table has `id=1`; with each character in the password field converted to integer, then to binary string. Each request in turn takes each 2 character bits of the binary string and finds its position in the field – `field(xx,'00','01','10','11')`, case `field=1` returns to true, then based on value of `field` go to `sleep`.
+A blind sql injection attack, in which the attacker executes multiple queries separated by commas. `ASC` to display the list of members in order of largest to smallest, unrelated to the following query. From the select segment, the code to get the content of the password in the `mebres` table has `id=1`; with each character in the password field converted to integer, then to binary string. Each request in turn takes each 2 character bits of the binary string and finds its position in the field – `field(xx,'00','01','10','11')`, case `field=1` returns true, and other values of `field` lead to `sleep` (different values).
 
 ```python
 from datetime import datetime
