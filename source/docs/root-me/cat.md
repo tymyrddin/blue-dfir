@@ -28,7 +28,7 @@ Device     Boot Start    End Sectors  Size Id Type
 chall9p1         2048 262143  260096  127M  b W95 FAT32
 ```
 
-Write the partitions as separate image.
+Write the partition as separate image.
 
 ```text
 ┌──(kali㉿kali)-[~/Downloads/root-me/forensic]
