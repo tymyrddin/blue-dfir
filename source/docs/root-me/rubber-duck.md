@@ -6,6 +6,8 @@
 
 Rubber duck. Decode `file.bin` using the [decoder of ducktoolkit](https://ducktoolkit.com/decode):
 
+![Ducktools](../../_static/images/duck.png)
+
 ```text
 DELAY
 iexplore http://challenge01.root-me.org/forensic/ch14/files/796f75277665206265656e2054524f4c4c4544.jpgENTER
