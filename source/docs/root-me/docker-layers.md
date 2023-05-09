@@ -79,8 +79,10 @@ flag.enc  json  layer.tar  VERSION
 
 Decode the flag with:
 
+```text
 ┌──(kali㉿kali)-[~/Downloads/root-me/forensic/docker-layer]
-└─$ cat pass.txt 
+└─$ cat pass.txt
+```
 
 ```text
 ┌──(kali㉿kali)-[~/Downloads/root-me/forensic/docker-layer]
