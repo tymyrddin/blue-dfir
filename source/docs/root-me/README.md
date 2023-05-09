@@ -17,5 +17,8 @@ Gathering evidence to understand the progress of actions carried out by an attac
 * [Find the cat](cat.md)
 * [Ugly duckling](rubber-duck.md)
 * [Command & Control level 3](c&c3.md)
+* [Open my vault](vault.md)
 * [Command & Control level 4](c&c4.md)
+* [Job interview](interview1.md)
 * [Command & Control level 6](c&c6.md)
+* [Second job interview](interview2.md)
