@@ -71,24 +71,4 @@ Copy (`C`) `revendications.odt`, and open it:
 
 ![Find the cat Libreoffice writer](../../_static/images/cat.png)
 
-Save the graphics in the file as `cat.jpg` and use `exiftool` to get its attributes:
-
-```text                                                                                                                     
-┌──(kali㉿kali)-[~/Documents]
-└─$ exiftool cat.jpg                                                                                          
-ExifTool Version Number         : 12.57
-File Name                       : cat.jpg
-Directory                       : .
-...
-GPS Altitude                    : 16.7 m Above Sea Level
-GPS Latitude                    : 47 deg 36' 16.15" N
-GPS Longitude                   : 7 deg 24' 52.48" E
-Circle Of Confusion             : 0.004 mm
-Field Of View                   : 54.4 deg
-Focal Length                    : 4.3 mm (35 mm equivalent: 35.0 mm)
-GPS Position                    : 47 deg 36' 16.15" N, 7 deg 24' 52.48" E
-Hyperfocal Distance             : 2.08 m
-Light Value                     : 6.2
-```
-
-Then look up the location.
+Save the graphics in the file as `cat.jpg`, use `exiftool cat.jpg` to get its `GPS Position`, and look up the name of the location.
