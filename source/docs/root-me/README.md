@@ -11,6 +11,7 @@ Gathering evidence to understand the progress of actions carried out by an attac
 ## How?
 
 * [Command & Control level 2](c&c2.md)
+* [Docker layers](docker-layers.md)
 * [Log analysis web attack](log-web-attack.md)
 * [Command & Control level 5](c&c5.md)
 * [Find the cat](cat.md)
