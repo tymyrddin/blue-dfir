@@ -64,6 +64,7 @@ Though DFIR is traditionally a reactive security function, tooling and advanced 
    docs/root-me/log-web-attack.md
    docs/root-me/c&c5.md
    docs/root-me/cat.md
+   docs/root-me/rubber-duck.md
    docs/root-me/c&c3.md
    docs/root-me/c&c4.md
    docs/root-me/c&c6.md
