@@ -15,6 +15,7 @@ Though DFIR is traditionally a reactive security function, tooling and advanced 
    :includehidden:
    :caption: Testlab
 
+   Drives <https://blue.tymyrddin.dev/projects/testlab/en/latest/docs/drives/README.html>
    Kali <https://blue.tymyrddin.dev/projects/testlab/en/latest/docs/vm/kali.html>
    CAINE <https://blue.tymyrddin.dev/projects/testlab/en/latest/docs/vm/caine.html>
    Forensics and incident response tools <https://blue.tymyrddin.dev/projects/testlab/en/latest/docs/dfir/README.html>
@@ -28,6 +29,7 @@ Though DFIR is traditionally a reactive security function, tooling and advanced 
    :caption: Notes on techniques
 
    docs/notes/README.md
+   docs/notes/1st-responder.md
    docs/notes/linux.md
    docs/notes/resources.md
 
