@@ -1,9 +1,6 @@
 # Digital forensics and incident response (DFIR)
 
-Built with [Sphinx](https://www.sphinx-doc.org) using a [theme](https://github.com/readthedocs/sphinx_rtd_theme) provided
-by [Read the Docs](https://readthedocs.org/).
-
-[![Documentation Status](https://readthedocs.org/projects/blue-dfir/badge/?version=latest)](https://blue.tymyrddin.dev/projects/dfir/en/latest/?badge=latest)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a05ae359-77c0-4ace-b9e8-ce180bb55ba5/deploy-status)](https://app.netlify.com/sites/loquacious-otter-28109d/deploys)
 
 ## Requirements
 
