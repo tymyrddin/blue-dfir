@@ -15,10 +15,10 @@ Though DFIR is traditionally a reactive security function, tooling and advanced 
    :includehidden:
    :caption: Testlab
 
-   Drives <https://blue.tymyrddin.dev/projects/testlab/en/latest/docs/drives/README.html>
-   Kali <https://blue.tymyrddin.dev/projects/testlab/en/latest/docs/vm/kali.html>
-   CAINE <https://blue.tymyrddin.dev/projects/testlab/en/latest/docs/vm/caine.html>
-   Forensics and incident response tools <https://blue.tymyrddin.dev/projects/testlab/en/latest/docs/dfir/README.html>
+   Drives <https://testlab.tymyrddin.dev/docs/drives/README>
+   Kali <https://testlab.tymyrddin.dev/docs/vm/kali>
+   CAINE <https://testlab.tymyrddin.dev/docs/vm/caine>
+   Forensics and incident response tools <https://testlab.tymyrddin.dev/docs/dfir/README>
 
 ----
 
