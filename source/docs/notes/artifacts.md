@@ -1,5 +1,13 @@
 # Artifact analysis
 
+For example:
+
+* Identifying and fingerprinting devices, operating systems, and running services.
+* Analysing memory dumps to discover traces of ransomware.
+* Swap analysis.
+* Password dumping.
+* Examining a Firefox browser and Gmail artifacts.
+
 ## Common Linux forensic artifacts
 
 ### Persistence related

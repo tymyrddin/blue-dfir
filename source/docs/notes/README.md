@@ -11,7 +11,7 @@ Store information for reference later.
 ## How?
 
 * [First responder](1st-responder.md)
-* [Memory acquisition](acquisition.md)
+* [Data acquisition](acquisition.md)
 * [File recovery and data carving](carving.md)
 * [Artifact analysis](artifacts.md)
 * [Resources](resources.md)
