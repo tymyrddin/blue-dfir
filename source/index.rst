@@ -30,7 +30,9 @@ Though DFIR is traditionally a reactive security function, tooling and advanced 
 
    docs/notes/README.md
    docs/notes/1st-responder.md
-   docs/notes/linux.md
+   docs/notes/acquisition.md
+   docs/notes/carving.md
+   docs/notes/artifacts.md
    docs/notes/resources.md
 
 ----
