@@ -48,12 +48,6 @@ If the attacker is connected remotely and is accessing highly sensitive data, yo
 * A forensic image or forensic evidence file is a bit-for-bit copy of the source device, with the data stored in a forensic image format (DD, E01, AFF). Recover deleted files, file slack, and partition slack.
 * A logical forensic image is restricted to specific datasets. It is not allowed to access the entire container. This can be used when extracting data from a server (the server can not be shut down) by making logical copies of the files and folders pertinent to an investigation. Deleted files, file slack, and partition slack are not recovered.
 
-## Memory acquisition in Linux
+## Hashes
 
-On the command-line, use `dd`, the data dump tool, and/or`dc3dd`, the enhancement of `dd`. Guymager, has built-in case-management abilities and also has many functional similarities to `dc3dd`, but it comes as a GUI tool and may be easier to use.
-
-## Memory acquisition in Windows
-
-On Windows, use FTK Imager (RAM and disk images) or Belkasoft Ram Capturer (only RAM acquisition).
-
-
+The standard cryptographic algorithms used in digital forensics are Message Digest 5 (MD5) and the Secure Hashing Algorithm (SHA-1). MD5 creates a 128-bit digital fingerprint, SHA-1 produces a 160-bit digital fingerprint.
