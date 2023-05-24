@@ -13,5 +13,5 @@ Store information for reference later.
 * [First responder](1st-responder.md)
 * [Data acquisition](acquisition.md)
 * [File recovery and data carving](carving.md)
-* [Artifact analysis](artifacts.md)
+* [Artifact analysis](analysis.md)
 * [Resources](resources.md)

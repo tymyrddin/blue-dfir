@@ -1,12 +1,20 @@
 # Artifact analysis
 
-For example:
+In the analysis phase, the digital objects to be used as digital evidence to support or refute a hypothesis of a crime, incident, or event, are determined. For example:
 
 * Identifying and fingerprinting devices, operating systems, and running services.
 * Analysing memory dumps to discover traces of ransomware.
 * Swap analysis.
 * Password dumping.
 * Examining a Firefox browser and Gmail artifacts.
+
+Statistical methods, manual analysis, techniques for understanding protocols and data formats, linking of multiple data objects (for example with data mining), and timelining are some of the techniques that are used during analysis.
+
+## Anti-forensics
+
+Digital forensics is comprehensive and challenging work by itself. And certain techniques such as media wiping and encryption and obfuscation are used to make forensic analysis of digital evidence even harder. 
+
+For example, malware developers use anti-forensics mechanisms and techniques making forensic analysis of both the functionality and origin of malicious software difficult. Encryption of configuration files is a typical technique, especially for botnet malware where the botnet masters want to avoid breaches of the C&C mechanisms used to control the bots.
 
 ## Common Linux forensic artifacts
 
