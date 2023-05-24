@@ -68,3 +68,8 @@ Auth logs have information about users and authentication-related logs:
 
     ls /var/log/apache2/
 
+## Resources
+
+* [ForensicArtifacts](https://github.com/ForensicArtifacts)
+* [Forensics Artifacts documentation](https://artifacts.readthedocs.io/en/latest/)
+* [National Software Reference Library (NSRL)](https://www.nist.gov/itl/ssd/software-quality-group/national-software-reference-library-nsrl)
