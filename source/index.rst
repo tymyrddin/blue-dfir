@@ -26,7 +26,7 @@ Though DFIR is traditionally a reactive security function, tooling and advanced 
    :glob:
    :maxdepth: 1
    :includehidden:
-   :caption: Notes on techniques
+   :caption: Notes
 
    docs/notes/README.md
    docs/notes/law.md
