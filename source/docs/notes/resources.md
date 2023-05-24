@@ -1,6 +1,11 @@
 # Resources
 
-## General
+## Civil society response
+
+* [Rightscon 2021 - How To Respond To Advanced Digital Threats Against Civil Society](https://archive.org/details/how-to-respond-to-advanced-digital-threats-against-civil-society)
+* [Computer Incident Response Center for Civil Society](https://www.civicert.org/)
+
+## Organisations
 
 * [European Digital Forensic Lab (EDFL)](https://www.eiprhr.org/European-Digital-Forensic-Laboratory-EDFL/)
 * [CARICOM Cyber Security and Cybercrime Action Plan](https://caricomimpacs.org/wp-content/uploads/2020/11/CARICOM-Cyber-Security-and-Cybercrime-Action-Plan.pdf)
