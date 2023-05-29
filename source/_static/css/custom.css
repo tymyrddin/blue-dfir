@@ -149,3 +149,28 @@ topnav ul {
 .wy-side-nav-search {
   background-image: url('../images/site/background.png');
 }
+
+.highlight .nb {
+  color: #00EE00;
+}
+
+.highlight .k {
+  color: #00EE00;
+  font-weight: bold;
+}
+
+.highlight .nv {
+  color: #6666FF;
+}
+
+.highlight .s2 {
+  color: #EE5555;
+}
+
+.highlight .s1 {
+  color: #EE5555;
+}
+
+.highlight .no {
+  color: #FF6666;
+}

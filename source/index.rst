@@ -32,9 +32,20 @@ Though DFIR is traditionally a reactive security function, tooling and advanced 
    docs/notes/forensics.md
    docs/notes/linux.md
    docs/notes/windows.md
+   docs/notes/macos.md
    docs/notes/ios.md
    docs/notes/android.md
    docs/notes/resources.md
+
+----
+
+.. toctree::
+   :maxdepth: 1
+   :includehidden:
+   :caption: Coding
+
+   Powershell scripts <https://github.com/tymyrddin/scripts-ps>
+   Bash/shell scripts <https://github.com/tymyrddin/scripts-bash>
 
 ----
 
