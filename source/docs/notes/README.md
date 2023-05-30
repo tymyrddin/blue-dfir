@@ -10,10 +10,12 @@ Store information for reference later.
 
 ## How?
 
-* [Choreography](choreography.md)
-* [Linux](linux.md)
-* [Windows](windows.md)
-* [macOS](macos.md)
-* [iOS](ios.md)
-* [Android](android.md)
+* [Forensic choreographies](choreography.md)
+* [Linux acquisition platform](acquisition.md)
+* [Image access](access.md)
+* [Windows analysis](windows.md)
+* [Linux analysis](linux.md)
+* [macOS analysis](macos.md)
+* [iOS forensics](ios.md)
+* [Android foresics](android.md)
 * [Resources](resources.md)
