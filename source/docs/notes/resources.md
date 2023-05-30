@@ -14,7 +14,7 @@
 ## Best practices
 
 * [SWGDE Best Practices for Computer Forensic Acquisitions](https://drive.google.com/file/d/18u5VM30S4BADk6Ak7IEe6zrEsrSxG6Nc/view)
-* [ACPO Good Practice Guide for Digital Evidencefor Digital Evidence](https://www.digital-detective.net/digital-forensics-documents/ACPO_Good_Practice_Guide_for_Digital_Evidence_v5.pdf)
+* [ACPO Good Practice Guide for Digital Evidence](https://www.digital-detective.net/digital-forensics-documents/ACPO_Good_Practice_Guide_for_Digital_Evidence_v5.pdf)
 
 ## Technology advances
 
@@ -28,6 +28,6 @@
 
 ## Artifacts
 
-* [ForensicArtifacts](https://github.com/ForensicArtifacts)
+* [Forensic Artifacts](https://github.com/ForensicArtifacts)
 * [Forensics Artifacts documentation](https://artifacts.readthedocs.io/en/latest/)
 * [National Software Reference Library (NSRL)](https://www.nist.gov/itl/ssd/software-quality-group/national-software-reference-library-nsrl)

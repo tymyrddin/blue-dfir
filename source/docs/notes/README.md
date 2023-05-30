@@ -10,7 +10,7 @@ Store information for reference later.
 
 ## How?
 
-* [Digital forensics](forensics.md)
+* [Choreography](choreography.md)
 * [Linux](linux.md)
 * [Windows](windows.md)
 * [macOS](macos.md)

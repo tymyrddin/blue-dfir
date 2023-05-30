@@ -29,7 +29,7 @@ Though DFIR is traditionally a reactive security function, tooling and advanced 
    :caption: Notes
 
    docs/notes/README.md
-   docs/notes/forensics.md
+   docs/notes/choreography.md
    docs/notes/linux.md
    docs/notes/windows.md
    docs/notes/macos.md
