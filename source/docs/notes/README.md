@@ -2,7 +2,7 @@
 
 ## What?
 
-Notes on forensics techniques.
+Notes on DFIR techniques.
 
 ## Why?
 
@@ -10,10 +10,10 @@ Store information for reference later.
 
 ## How?
 
-* [Linux incident response](linux.md)
-* [Windows incident response](windows.md)
-* [macOS incident response](macos.md)
-* [Digital forensics choreography](forensics.md)
-* [iOS forensics](ios.md)
-* [Android forensics](android.md)
+* [Digital forensics](forensics.md)
+* [Linux](linux.md)
+* [Windows](windows.md)
+* [macOS](macos.md)
+* [iOS](ios.md)
+* [Android](android.md)
 * [Resources](resources.md)

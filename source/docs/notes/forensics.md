@@ -1,4 +1,4 @@
-# Digital forensics choreography
+# Digital forensics
 
 ## First responder
 

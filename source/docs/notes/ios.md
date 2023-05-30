@@ -1,4 +1,4 @@
-# iOS forensics
+# iOS
 
 The first step in a forensic examination of an iOS device is identifying the device model. The model of an iOS device can be used to help the examiner develop an understanding of the underlying components and capabilities of the device, which can be used to drive the methods for acquisition and examination. Legacy iOS devices should not be disregarded, because they may surface as part of an investigation. Examiners must be aware of all iOS devices, as old devices are sometimes still in use and may be tied to a criminal investigation.
 
