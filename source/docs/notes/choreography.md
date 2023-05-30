@@ -35,10 +35,6 @@ During a forensic examination, it’s beneficial to keep a high-level log of pen
 * Provides information for troubleshooting problems and getting support
 * Maintains a record of work done by external and third-party examiners
 
-###
-
-The Unix/Linux shell was not originally designed with logging or audit trails in mind. In the past, patches have been created to augment the history mechanism and hacks have attempted to capture commands as the shell is used.
-
 ### Chain of custody (CoC)
 
 A CoC is a form that legally ensures the integrity of evidence as it is exchanged between individuals, and provides a level of accountability as personal identification is required when completing the forms. This form gives an exact log and account of the transportation and the exchange between parties, from collection at the scene to a presentation in a court. More in [Computer forensics: Chain of custody [updated 2019]](https://resources.infosecinstitute.com/topic/computer-forensics-chain-custody/).

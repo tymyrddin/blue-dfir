@@ -10,7 +10,7 @@ The most common shell in use today, and the default in most Linux distributions,
 
 ### Shell history
 
-The Bash shell history can be configured to satisfy the following basic requirements:
+The Unix/Linux shell was not originally designed with logging or audit trails in mind. In the past, patches have been created to augment the history mechanism and hacks have attempted to capture commands as the shell is used. Using basic Bash shell history as an audit trail is rudimentary. The Bash shell history can be configured to satisfy the following basic requirements:
 
 * Record the command entered by the examiner
 * Record a timestamp for each command entered
@@ -19,7 +19,7 @@ The Bash shell history can be configured to satisfy the following basic requirem
 * Avoid conflicts when using multiple terminal windows on the same system
 * Include root and non-root command history
 
-Note: Using basic Bash shell history as an audit trail is rudimentary. Important information, such as the command completion time, the working directory where the command was executed, and the return code, are not logged. The Bash history is also not a tamper-resistant system: the examiner can easily modify or delete the history.
+Important information, such as the command completion time, the working directory where the command was executed, and the return code, are not logged. The Bash history is also not a tamper-resistant system: the examiner can easily modify or delete the history.
 
 Some shells, such as `zsh`, have additional history features that allow for the logging of elapsed time. Other proposed solutions to improve shell logging include the use of `PS1`, `PROMPT_COMMAND`, `trap` and `DEBUG`, and key bindings to modify a command before executing. Using `sudo logging`; `auditd logging`; or special scripts, such as [Bash-Preexec](https://github.com/rcaloras/bash-preexec), can also improve command line logging.
 
