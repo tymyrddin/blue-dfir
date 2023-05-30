@@ -14,9 +14,34 @@ Documentation of the scene is usually also done by first responders to aid in fu
 * Books, notes, and pieces of paper
 * Connected and disconnected cables
 
+### Audit trails
+
+An audit trail or log maintains a historical record of actions, events, and tasks. It can have various levels of detail and can be manual or automated.
+
+During a forensic examination, it’s beneficial to keep a high-level log of pending and completed activity. Pending tasks turn into completed tasks, and completed tasks make up the examination’s historical record. Often while working, you’ll think of a task that you need to address sometime in the future or a task you’ve completed and should note. Making quick notes and more comprehensive task lists becomes increasingly valuable as the length of the examination grows (possibly to many hours, days, or longer) or when more than one examiner is involved.
+
+### Task management
+
+* Helps ensure nothing was forgotten
+* Avoids duplicating work already done
+* Improves collaboration and coordination when working in teams
+* Shows compliance with policies and procedures
+* Facilitates accounting, including billing
+* Helps produce documentation and reports (formal incident reports or forensic reports)
+* Allows for post-incident review to identify lessons learned and support process optimization
+* Helps to maintain a longer-term historical record of completed activity
+* Supports learning and education for new team members
+* Serves as a guide to remember complex procedures
+* Provides information for troubleshooting problems and getting support
+* Maintains a record of work done by external and third-party examiners
+
+###
+
+The Unix/Linux shell was not originally designed with logging or audit trails in mind. In the past, patches have been created to augment the history mechanism and hacks have attempted to capture commands as the shell is used.
+
 ### Chain of custody (CoC)
 
-CoC is a form that legally ensures the integrity of evidence as it is exchanged between individuals, and provides a level of accountability as personal identification is required when completing the forms. This form gives an exact log and account of the transportation and the exchange between parties, from collection at the scene to a presentation in a court. More in [Computer forensics: Chain of custody [updated 2019]](https://resources.infosecinstitute.com/topic/computer-forensics-chain-custody/).
+A CoC is a form that legally ensures the integrity of evidence as it is exchanged between individuals, and provides a level of accountability as personal identification is required when completing the forms. This form gives an exact log and account of the transportation and the exchange between parties, from collection at the scene to a presentation in a court. More in [Computer forensics: Chain of custody [updated 2019]](https://resources.infosecinstitute.com/topic/computer-forensics-chain-custody/).
 
 ## Data acquisition
 
@@ -58,6 +83,27 @@ The original evidence should only be used to create forensic copies or images. A
 
 A digital signature (cryptographic hash) is calculated both for the original media and for the copy, to verify that the evidence was not tampered with or modified after the evidence was acquired. The stronger the cryptographic algorithm used, the less chance of it being attacked or compromised. This means that the integrity of the evidence and physical images created remain intact, which will prove useful in forensic cases and expert testimony.
 
+### Image sizes and disk space requirements
+
+* Can the attached storage be analysed in place without taking a forensic image?
+* What is the size of the subject disk?
+* What is the available space on the examiner’s machine? 
+* What is the potential for image compression?
+* How much space do forensic tools need for processing and temporary files?
+* What is the estimated number of files to be extracted for further analysis?
+* How much memory and swap space is available on the examiner’s machine?
+* Is there a possibility of more subject disks being added to the same case or incident?
+* Is there an expectation to separately extract all slack or unallocated disk space?
+* Are there plans to extract individual partitions (possibly including swap)?
+* Is there a potential need to convert from one forensic format to another?
+* Do disk images need to be prepared for transport to another location?
+* Do subject disks contain virtual machine images to separately extract and analyse?
+* Do subject disks contain large numbers of compressed and archive files?
+* Are subject disks using full-disk encryption?
+* Is there a need to burn images to another disk or DVDs for storage or transport?
+* Is there a need to carve files from a damaged or partially overwritten filesystem?
+* How are backups of the examiner host performed?
+
 ### Volatile evidence
 
 The term ***forensically sound manner*** means leaving the smallest possible footprint during collection to minimise the amount of data being changed with the collection. To collect volatile evidence, start from the most to the least volatile:
@@ -68,7 +114,7 @@ The term ***forensically sound manner*** means leaving the smallest possible foo
 4. Virtual
 5. Physical
 
-Approach volatile data collection with the same mindset as creating forensic images. Document each step, because any interaction with the machine to collect volatile data, which will change the evidence. Changes made do not affect what is under investigation, but changes are being made to the system; In a legal case a question can be asked about potential changes to the evidence while testifying at a administrative or judicial proceeding.
+Approach volatile data collection with the same mindset as creating forensic images. Document each step, because any interaction with the machine to collect volatile data, which will change the evidence. Changes made do not affect what is under investigation, but changes are being made to the system; In a legal case a question can be asked about potential changes to the evidence while testifying at an administrative or judicial proceeding.
 
 ### Collecting RAM
 
@@ -117,7 +163,7 @@ Always use multiple tools to ensure that the results are accurate by comparing t
 
 Media file parsers use techniques to identify patterns or signatures associated with particular file formats and types. Most file types contain headers and footers that make them readable to the applications handling them; these applications render the file as intended for use by the user. The use of carving tools allows for selecting a set of file types to recover from a piece of media. Media carving can be quite useful in order to acquire deleted files such as previously deleted images.
 
-Other parsers are useful for examining one of the most common electronic communication protocols: email. Email parsers can crawl through the raw data copied from a digital device and render individual emails in a manner that makes it easier to analyze them in later phases of an investigation.
+Other parsers are useful for examining one of the most common electronic communication protocols: email. Email parsers can crawl through the raw data copied from a digital device and render individual emails in a manner that makes it easier to analyse them in later phases of an investigation.
 
 The parsing of proprietary files and objects requires examining the information contained within files.
 
