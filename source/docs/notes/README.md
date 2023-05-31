@@ -12,7 +12,7 @@ Store information for reference later.
 
 * [Forensic choreographies](choreography.md)
 * [Linux acquisition platform](acquisition.md)
-* [Image access](access.md)
+* [Accessing images](access.md)
 * [Windows analysis](windows.md)
 * [Linux analysis](linux.md)
 * [macOS analysis](macos.md)

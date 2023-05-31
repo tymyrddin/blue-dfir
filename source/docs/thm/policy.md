@@ -2,11 +2,11 @@
 |:--:|
 | [THM Room: KAPE](https://tryhackme.com/room/kape) |
 
-# Acceptable Use Policy violation
+# Acceptable Use Policy violation (KAPE)
 
-Organization X has an Acceptable Use Policy for their Portable Devices, including Laptops. This policy forbids users 
+Organisation X has an Acceptable Use Policy for their Portable Devices, including Laptops. This policy forbids users 
 from connecting removable or Network drives, installing software from unknown locations, and connecting to unknown 
-networks. It looks like one of the users has violated this policy. Can you help Organization X find out if the user 
+networks. It looks like one of the users has violated this policy. Can you help Organisation X find out if the user 
 violated the Acceptable Use Policy on their device? 
 
 Run KAPE with your desired Target and Module options.

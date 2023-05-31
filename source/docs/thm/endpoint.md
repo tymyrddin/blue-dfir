@@ -1,4 +1,4 @@
-# Endpoint investigation
+# Endpoint investigation (Redline)
 
 Scenario: A Senior Accountant, Charles, is complaining that he cannot access the spreadsheets and other files he has been working on. He also mentioned that his wallpaper got changed with the saying that his files got encrypted. This is not good news!
 

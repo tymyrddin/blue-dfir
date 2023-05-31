@@ -2,7 +2,7 @@
 |:--:|
 | [THM Rooms: Autopsy (1 and 2)](https://tryhackme.com/room/autopsy2ze0) |
 
-# Windows 10 disk image
+# Windows 10 disk image (Autopsy)
 
 In the attached VM, there is an Autopsy case file and its corresponding disk image. After loading the `.aut` file, 
 make sure to re-point Autopsy to the disk image file. Ingest Modules were already ran for your convenience.

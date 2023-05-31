@@ -55,28 +55,6 @@ Though DFIR is traditionally a reactive security function, tooling and advanced 
    :glob:
    :maxdepth: 1
    :includehidden:
-   :caption: TryHackMe rooms
-
-   docs/thm/README.md
-   docs/thm/server.md
-   docs/thm/desktop.md
-   docs/thm/standard.md
-   docs/thm/ioc-collector.md
-   docs/thm/ioc-analysis.md
-   docs/thm/endpoint.md
-   docs/thm/leaky.md
-   docs/thm/windows10.md
-   docs/thm/policy.md
-   docs/thm/bob.md
-   docs/thm/feelings.md
-   docs/thm/nightmare.md
-
-----
-
-.. toctree::
-   :glob:
-   :maxdepth: 1
-   :includehidden:
    :caption: Root-me challenges
 
    docs/root-me/README.md
@@ -92,6 +70,28 @@ Though DFIR is traditionally a reactive security function, tooling and advanced 
    docs/root-me/interview1.md
    docs/root-me/c&c6.md
    docs/root-me/interview2.md
+
+--------
+
+.. toctree::
+   :glob:
+   :maxdepth: 1
+   :includehidden:
+   :caption: TryHackMe rooms
+
+   docs/thm/README.md
+   docs/thm/server.md
+   docs/thm/desktop.md
+   docs/thm/standard.md
+   docs/thm/ioc-collector.md
+   docs/thm/ioc-analysis.md
+   docs/thm/endpoint.md
+   docs/thm/leaky.md
+   docs/thm/windows10.md
+   docs/thm/policy.md
+   docs/thm/bob.md
+   docs/thm/feelings.md
+   docs/thm/nightmare.md
 
 ----
 

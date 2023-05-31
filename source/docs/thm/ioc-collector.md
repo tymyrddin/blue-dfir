@@ -1,4 +1,4 @@
-# IOC Search Collector
+# IOC Search Collector (Redline)
 
 **What is the actual filename of the Keylogger?**
 

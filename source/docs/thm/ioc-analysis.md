@@ -1,4 +1,4 @@
-# IOC Search Collector Analysis
+# IOC Search Collector Analysis (Redline)
 
 Scenario: You are assigned to do a threat hunting task at Osinski Inc. They believe there has been an intrusion, 
 and the malicious actor was using the tool to perform the lateral movement attack, possibly a "pass-the-hash" attack.

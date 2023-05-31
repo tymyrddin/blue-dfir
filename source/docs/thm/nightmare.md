@@ -2,7 +2,7 @@
 |:--:|
 | [THM Room: Velociraptor](https://tryhackme.com/room/velociraptorhp) |
 
-# Hunt for a nightmare
+# Hunt for a nightmare (Volatility)
 
 Objective: Use Velociraptor to create an artifact to detect the PrintNightmare vulnerability!
 

@@ -2,7 +2,7 @@
 |:--:|
 | [THM Room: Volatility](https://tryhackme.com/room/volatility) |
 
-# BOB! THIS ISN'T A HORSE!
+# BOB! THIS ISN'T A HORSE! (Volatility)
 
 Your SOC has informed you that they have gathered a memory dump from a quarantined endpoint thought to have been 
 compromised by a banking trojan masquerading as an Adobe document. Your job is to use your knowledge of threat 

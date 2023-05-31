@@ -2,7 +2,7 @@
 |:--:|
 | [THM Room: Volatility](https://tryhackme.com/room/volatility) |
 
-# That Kind of Hurt my Feelings
+# That Kind of Hurt my Feelings (Volatility)
 
 You have been informed that your corporation has been hit with a chain of ransomware that has been hitting 
 corporations internationally. Your team has already retrieved the decryption key and recovered from the attack. 
