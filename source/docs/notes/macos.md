@@ -177,3 +177,8 @@ Screen sharing:
 SIP:
 
     csrutil status
+
+## Resources
+
+* [About DFIR/Tools & Artifacts > macOS](https://aboutdfir.com/toolsandartifacts/macos/)
+* [DFIR Artifacts > Mac Artifact List](https://dfirartifacts.com/mac-artifacts/)

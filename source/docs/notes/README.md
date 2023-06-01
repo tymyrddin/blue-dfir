@@ -11,12 +11,13 @@ Store information for reference later.
 ## How?
 
 * [Forensic choreographies](choreography.md)
+* [Mobile forensics](mobile.md)
 * [Preparing for acquisition](preparation.md)
 * [Image acquisition](acquisition.md)
 * [Accessing images](access.md)
 * [Windows analysis](windows.md)
 * [Linux analysis](linux.md)
 * [macOS analysis](macos.md)
-* [iOS forensics](ios.md)
-* [Android foresics](android.md)
+* [iOS analysis](ios.md)
+* [Android analysis](android.md)
 * [Resources](resources.md)

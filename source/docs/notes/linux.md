@@ -274,5 +274,6 @@ ls /var/log/apache2/
 
 ## Resources
 
+* [About DFIR/Tools & Artifacts > Linux](https://aboutdfir.com/toolsandartifacts/linux/)
 * [You Don’t Know Jack About .bash_history - SANS DFIR Summit 2016](https://www.youtube.com/watch?v=wv1xqOV2RyE)
 * [Linux Storage Stack Diagram](https://www.thomas-krenn.com/en/wiki/Linux_Storage_Stack_Diagram)

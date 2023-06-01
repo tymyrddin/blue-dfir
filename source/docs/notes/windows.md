@@ -1423,16 +1423,5 @@ You can open up your Powershell transcript with notepad.
 
 ## Resources
 
-* [Detecting and Protecting when Remote Desktop Protocol (RDP) is open to the Internet](https://research.nccgroup.com/2021/10/21/detecting-and-protecting-when-remote-desktop-protocol-rdp-is-open-to-the-internet/)
-* [Tracking and Analyzing Remote Desktop Connection Logs in Windows](https://woshub.com/rdp-connection-logs-forensics-windows/)
-* [PsList v1.41](https://learn.microsoft.com/en-us/sysinternals/downloads/pslist)
-* [Introduction to PowerShell Scheduled Jobs](https://devblogs.microsoft.com/scripting/introduction-to-powershell-scheduled-jobs/)
-* [PowerShell Jobs](https://labs.jumpsec.com/powershell-jobs/)
-* [Windows Management Instrumentation (WMI) Offense, Defense, and Forensics](https://www.mandiant.com/resources/reports/windows-management-instrumentation-wmi-offense-defense-and-forensics)
-* [An intro into abusing and identifying WMI Event Subscriptions for persistence](https://in.security/2019/04/03/an-intro-into-abusing-and-identifying-wmi-event-subscriptions-for-persistence/)
-* [Should I use CIM or WMI with Windows PowerShell?](https://devblogs.microsoft.com/scripting/should-i-use-cim-or-wmi-with-windows-powershell/)
-* [Running Once, Running Twice, Pwned! Windows Registry Run Keys](https://labs.jumpsec.com/running-once-running-twice-pwned-windows-registry-run-keys/)
-* [Mitre ATT&CK: Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder](https://attack.mitre.org/techniques/T1547/001/)
-* [Mitre ATT&CK: Event Triggered Execution: Screensaver](https://attack.mitre.org/techniques/T1546/002/)
-* [WDigest Clear-Text Passwords: Stealing More than a Hash](https://blog.netwrix.com/2022/10/11/wdigest-clear-text-passwords-stealing-more-than-a-hash/)
-* [powershell_eventlog_parsing.ps1](https://gist.github.com/exp0se/b57f434c9c34b98f84a2)
+* [About DFIR/Tools & Artifacts > Windows](https://aboutdfir.com/toolsandartifacts/windows/)
+* [DFIR Artifacts > Windows Artifact List](https://dfirartifacts.com/windows-artifacts/)
