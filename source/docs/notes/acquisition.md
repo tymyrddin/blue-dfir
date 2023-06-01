@@ -67,3 +67,55 @@ Configure [sfsimage](testlab:docs/dfir/squashfs) to use `dc3dd` as the imaging t
 
     DD="dc3dd if=$DDIN log=errorlog.txt hlog=hashlog.txt hash=md5"
 
+Then the block device can be imaged using the `-i` flag:
+
+    $ sfsimage -i /dev/sde philips-usb-drive.sfs
+
+The size of the compressed `*.sfs` file:
+
+    $ ls -lh *.sfs
+
+## Cryptographic hashing
+
+The cryptographic hashing of forensic images is typically included as part of the imaging process.
+
+    # dcfldd if=/dev/sde of=image.raw conv=noerror,sync hash=md5,sha256
+    # dc3dd if=/dev/sde of=image.raw hash=md5 hash=sha1 hash=sha512
+    # dd if=/dev/sde | tee image.raw | md5sum
+
+When imaging an older or damaged disk, block read errors can occur. These errors can happen in random places during the acquisition, and the frequency can increase over time, and the cryptographic hash might be different each time the disk is read. The solution to this problem is to use hash windows, or piecewise hashing.
+
+    # dcfldd if=/dev/sde of=image.raw conv=noerror,sync hashwindow=1M
+    # dc3dd if=/dev/sda hof=image.raw ofs=image.000 ofsz=1G hlog=hash.log hash=md5
+
+## Signing images
+
+Cryptographic signing of forensic images binds a person (or that person’s key) to the integrity of the image.
+
+Sign the log output containing the MD5 hash and other details:
+
+    $ gpg --clearsign hash.log
+    $ cat hash.log.asc
+
+The `gpgsm` tool is part of GnuPG2 and supports managing X.509 keys, encryption, and signatures using the S/MIME standard. Once the necessary keys have been generated and certificates have been installed, you can use `gpgsm` to sign files in a similar manner to GPG:
+
+    $ gpgsm -a -r username@example.com -o hash.log.pem --sign hash.log
+
+## Timestamping
+
+n some cases, it is also useful to bind the forensic acquisition results to a specific point in time. Timestamping is a formal standard defined in RFC-3161, which describes the format of a timestamp request and response. OpenSSL can create and send timestamp requests and verify responses.
+
+To request an RFC-3161 compliant timestamp for the acquisition log:
+
+    $ openssl ts -query -data hash.log -out hash.log.tsq -cert
+
+This timestamp request contains a hash of the hash.log file, not the actual file. The file is not sent to the timestamping server. This is important from an information security perspective. The timestamp service provider is only trusted with timestamp information, not the contents of the files being timestamped.
+
+The generated request can then be sent to a timestamping service using the `tsget` command included with OpenSSL:
+
+    $ tsget -h https://freetsa.org/tsr hash.log.tsq
+
+If the timestamping server accepts the request, it returns an RFC-3161 compliant timestamp. To view it:
+
+    $ openssl ts -reply -in hash.log.tsr -text
+
