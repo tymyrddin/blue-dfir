@@ -38,6 +38,42 @@ export HISTTIMEFORMAT="%F-%R "
 
 These mean that history is enabled and in append mode (as opposed to overwriting with each new login). The two variables `HISTCONTROL`and `HISTIGNORE` control which commands are saved to the history file. A common default setting is to ignore duplicates and commands beginning with a space. To ensure complete logging of all commands, the `HISTCONTROL` and `HISTIGNORE` variables are explicitly set to null. The `HISTFILE` variable is explicitly set to ensure command history held in memory is saved when a shell exits. `HISTFILESIZE` and `HISTSIZE` are set to `-1` to ensure history is not truncated or overwritten. The `HISTTIMEFORMAT` variable enables timestamps to be written to the history file and allows for setting a time format.
 
+## Filesystem
+
+[The Linux kernel supports a large number of filesystems](https://en.wikipedia.org/wiki/Category:File_systems_supported_by_the_Linux_kernel), which can be useful when performing some DFIR tasks. Filesystem support is not necessary when performing forensic acquisition, because the imaging process is operating on the block device below the filesystem and partition scheme.
+
+To provide a consistent interface for different types of filesystems, the Linux kernel implements a Virtual File System (VFS) abstraction layer. This allows mounting of regular storage media filesystems (`EXT*`, `NTFS`, `FAT`, ...), network-based filesystems (`nfs`, `sambafs/smbfs`, ...), userspace filesystems based on [FUSE](https://en.wikipedia.org/wiki/Filesystem_in_Userspace), stackable filesystems (`encryptfs`, `unionfs`, ...), and other special pseudo filesystems (`sysfs`, `proc`, ...).
+
+### Mounting
+
+Filesystems that reside on disk devices in Unix and Linux require explicit mounting before being accessible as a regular directory structure. Mounting a filesystem means it is made available to use with standard file access tools (file managers, applications, ...), similar to drive letters in the DOS/Windows world. Linux doesn’t use drive letters; mounted disks become part of the local filesystem and are attached to any chosen part of the filesystem tree, the mount point.
+
+To mount a USB stick on an investigator system using (`/mnt`) as the mount point:
+
+```shell
+sudo mount /dev/sdb1 /mnt
+```
+
+To unmount, use the `umount` command (not unmount) with either the device name or the mount point.
+
+```shell
+sudo umount /dev/sdb1
+sudo umount /mnt
+```
+
+After the filesystem is unmounted, the raw disk is still visible to the kernel and accessible by block device tools, even though the filesystem is not mounted. An unmounted disk is safe to physically detach from an investigator’s acquisition system.
+
+***Do not attach or mount suspect drives without a write blocker***. There is a high risk of modifying, damaging, and destroying digital evidence. Modern OSes will update the last-accessed timestamps as the files and directories
+are accessed. Any userspace daemons (search indexers, thumbnail generators, and so on) might write to the disk and overwrite evidence, filesystems might attempt repairs, journaling filesystems might write out journal data, and other human accidents might occur.
+
+In cases where the Linux kernel does not detect the filesystem, it may have to be explicitly specified. A filesystem will not be correctly detected for any of the following reasons:
+
+* The filesystem is not supported by the host system (missing kernel module or unsupported filesystem).
+* The partition table is corrupted or missing.
+* The partition has been deleted.
+* The filesystem offset on the disk is unknown.
+* The filesystem needs to be made accessible (unlock device, decrypt partition, and so on).
+
 ## Drives
 
 Attached drives will appear as block devices in the `/dev` directory when they’re detected by the kernel. Raw disk device files have a specific naming convention: `sd*` for SCSI and SATA, `hd*` for IDE, `md*` for RAID arrays, `nvme*n*` for NVME drives, and other names for less common or proprietary disk device drivers.
@@ -71,7 +107,6 @@ Several other devices are useful to know:
 * Access other external media via `/dev/cdrom` or `/dev/dvd` (these are often symbolic links to `/dev/sr*`). 
 * In some cases, devices are accessed through the generic SCSI device driver interface `/dev/sg*`. 
 * Other special pseudo devices include `/dev/loop*` and `/dev/mapper/*` devices.
-
 
 ## Files
 

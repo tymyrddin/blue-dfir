@@ -11,7 +11,8 @@ Store information for reference later.
 ## How?
 
 * [Forensic choreographies](choreography.md)
-* [Linux acquisition platform](acquisition.md)
+* [Preparing for acquisition](preparation.md)
+* [Image acquisition](acquisition.md)
 * [Accessing images](access.md)
 * [Windows analysis](windows.md)
 * [Linux analysis](linux.md)

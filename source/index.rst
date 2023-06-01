@@ -18,6 +18,7 @@ Though DFIR is traditionally a reactive security function, tooling and advanced 
    Drives <https://testlab.tymyrddin.dev/docs/drives/README>
    Kali <https://testlab.tymyrddin.dev/docs/vm/kali>
    CAINE <https://testlab.tymyrddin.dev/docs/vm/caine>
+   SquashFS and fsfimage <https://testlab.tymyrddin.dev/docs/dfir/squashfs>
    DFIR tools <https://testlab.tymyrddin.dev/docs/dfir/README>
 
 ----
@@ -30,6 +31,7 @@ Though DFIR is traditionally a reactive security function, tooling and advanced 
 
    docs/notes/README.md
    docs/notes/choreography.md
+   docs/notes/preparation.md
    docs/notes/acquisition.md
    docs/notes/access.md
    docs/notes/windows.md
