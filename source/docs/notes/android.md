@@ -14,6 +14,8 @@ It takes a few minutes to parse through the image depending on its size. There m
 
 When the image is loaded, expand the file present under Data Sources to see data present in the image: Call logs, contacts, GPS trackpoints and messages are extracted by Android Analyzer module, EXIF metadata is extracted by EXIF Parser module, files with wrong extensions are detected by Extension Mismatch Detector module, and web cookies, web downloads, web history/web searches are extracted by Recent Activity module. And Autopsy also supports automatic deleted files recovery from ext4 file systems.
 
+By the way, Autopsy also has a `iOS Forensics using iLEAPP` module.
+
 ## Resources
 
 * [About DFIR/Tools & Artifacts > Android](https://aboutdfir.com/toolsandartifacts/android/)

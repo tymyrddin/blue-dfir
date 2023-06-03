@@ -1,40 +1,25 @@
-# Mobile forensics
-
-The term "mobile devices" includes mobile phones, smartphones, tablets, and GPS units to wearables and PDAs. These small-sized machines amass huge quantities of data on a daily basis, which can be extracted to facilitate an investigation.
-
-* Incoming, outgoing, missed call history
-* Phonebook or contact lists
-* SMS text, application based, and multimedia messaging content
-* Pictures, videos, and audio files and sometimes voicemail messages
-* Internet browsing history, content, cookies, search history, analytics information
-* To-do lists, notes, calendar entries, ringtones
-* Documents, spreadsheets, presentation files and other user-created data
-* Passwords, passcodes, swipe codes, user account credentials
-* Historical geolocation data, cell phone tower related location data, Wi-Fi connection information
-* User dictionary content
-* Data from various installed apps
-* System files, usage logs, error messages
-* Deleted data from all of the above
-
-It is hard to be in control of data on mobile devices because the data is mobile as well. Once communications or files are sent from a smartphone, control is lost. Although there are different devices having the capability to store considerable amounts of data, the data in itself may physically be in another location. 
+# Mobile data extraction
 
 ## iOS
 
-The first step in a forensic examination of an iOS device is identifying the device model. The model of an iOS device can be used to help the examiner develop an understanding of the underlying components and capabilities of the device, which can be used to drive the methods for acquisition and examination. Legacy iOS devices should not be disregarded, because they may surface as part of an investigation. Examiners must be aware of all iOS devices, as old devices are sometimes still in use and may be tied to a criminal investigation.
+### Extraction methods 
 
-There are several ways to acquire data from an iOS device: logical, filesystem, and physical acquisition techniques, including techniques of acquiring jailbroken devices and methods to bypass passcodes. 
+Three main acquisition methods are available for mobile devices: manual, logical, and physical, or file system for iOS. 
 
-Physical acquisition is the preferred acquisition method as it recovers as close as possible a bit-by-bit copy of the data from the device; but, it is not possible to perform physical acquisition on all iOS devices.
-
-Backup files may exist or be the only method to extract data from the device. iOS device backups contain essential information that may be the only source of evidence. 
+1. ***Manual data extraction***: This method is navigating the device as a normal user and taking screenshots of the found evidence. It is not a recommended acquisition method since it involves a high risk of human errors. This might affect the evidence state by accidental deletion of or changes to data. This is a very simple process and shows only what is seen on the device. Can be used only to validate outcomes in some cases. 
+2. ***Logical data extraction***: Logical acquisition involves copying what the user has access to on their mobile, which means that data is extracted from backup. This method requires the device to be unlocked. It provides readable data, unlike some encrypted parts in the physical image. Recovering data from unallocated space is limited to data recovery from unallocated SQLite records. 
+3. ***Physical data extraction***: The copying process in this method includes the device storage and the file system. The copying is done on the bits level acquiring all data. This includes deleted data and the ability to access the unallocated space. ***Physical acquisition is not useful for iPhone 5s and later*** due to the Secure Enclave hardware feature in Apple devices. It provides an additional layer of security by its isolation from the main processor. This security mechanism keeps the user data encrypted even if the OS is compromised. File system acquisition now is used for iOS devices, which requires a jailbroken device. Jailbreaking will change the original data on the device. It is not a reversible change.
 
 ## Android
 
-Unlike iOS, several variants of Android exist as many devices run the Android operating system and each may have different file systems and unique features. The fact that Android is open and customizable also changes the digital forensics of it. Expect the unexpected when handling an Android device.
+### Extraction methods
 
-A proper forensic workstation setup is required prior to conducting investigations on an Android device. Using open source methods to acquire and analyze Android devices requires the installation of specific software on a forensic workstation. If the method of forensic acquisition requires the Android device to be unlocked, determine the best method by which to gain access to the device. Depending on the forensic acquisition method and scope of the investigation, rooting the device can provide complete access to the files present on the device.
+1. ***Manual data extraction***: Standard interfaces such as touch controls, screen controllers, and keyboards are used to access the information stored on the device and to record input directly from the screen. There are no special tools necessary, and the technical difficulty is modest. Disadvantages of this method are that large amounts of data will be exhausted over time, there is a risk of data adjustments being made by mistake, and it does not restore data that has been erased. It will certainly be impractical if the hardware is destroyed.
+2. ***Logical data extraction***: A standard interface between the workstation and the device is built using USB, Wi-Fi, or Bluetooth to send device data to the workstation. Technical complexity is minimal, but unintentional data changes may occur, and data access abstraction is high.
+3. ***Physical data extraction or hex dumping***: With the device in diagnostic mode, its flash memory is downloaded. This can be done with conventional interfaces, and works with devices that have little damage. Data analysis and decoding might be difficult (JTAG requires training). Access to all partitions is not guaranteed.
+4. ***Chip-off***: A binary image is extracted from the device's removed physical flash memory. This allows for traditional analysis, but can cause physical harm to the device. And examiners need training.
+5. ***Micro read***: An electron microscope is used to examine logic gates on a physical level and the observations turned into readable, comprehensible data. This method is extremely resource-intensive and technically challenging.
 
-Once the device is accessible, an examiner can extract the data using manual, logical, or physical data extraction techniques. Logical techniques extract the data by interacting with the device using tools such as ADB. Physical techniques access a larger set of data; they are complex and require expertise.
 
-Recovery of the deleted data on Android devices depends on various factors, which heavily rely on access to the data residing in the internal memory and SD card. While the recovery of deleted items from external storage, such as an SD card, is easy, the recovery of deleted items from the internal memory takes considerable effort. SQLite file-parsing and file-carving techniques are two methods that are used to recover deleted data extracted from an Android device.
+
 

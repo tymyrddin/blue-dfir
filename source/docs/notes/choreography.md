@@ -176,3 +176,24 @@ In the analysis phase, the digital objects to be used as digital evidence to sup
 * Examining a Firefox browser and Gmail artifacts.
 
 Statistical methods, manual analysis, techniques for understanding protocols and data formats, linking of multiple data objects (for example with data mining), and timelining are some of the techniques that are used during analysis.
+
+## Mobile forensics
+
+The term "mobile devices" includes mobile phones, smartphones, tablets, and GPS units to wearables and PDAs. These small-sized machines amass huge quantities of data on a daily basis, which can be extracted to facilitate an investigation.
+
+* Incoming, outgoing, missed call history
+* Phonebook or contact lists
+* SMS text, application based, and multimedia messaging content
+* Pictures, videos, and audio files and sometimes voicemail messages
+* Internet browsing history, content, cookies, search history, analytics information
+* To-do lists, notes, calendar entries, ringtones
+* Documents, spreadsheets, presentation files and other user-created data
+* Passwords, passcodes, swipe codes, user account credentials
+* Historical geolocation data, cell phone tower related location data, Wi-Fi connection information
+* User dictionary content
+* Data from various installed apps
+* System files, usage logs, error messages
+* Deleted data from all of the above
+
+It is hard to be in control of data on mobile devices because the data is mobile as well. Once communications or files are sent from a smartphone, control is lost. Although there are different devices having the capability to store considerable amounts of data, the data in itself may physically be in another location. 
+
