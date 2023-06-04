@@ -57,6 +57,18 @@ Investigating a live system means that logs and timestamps will be generated whi
 * Data stored in RAM and paging files must be collected with as little modification to the data as possible. Use Guymager, dc3dd in Kali Linux. CAINE and Helix can also be used for acquiring RAM and the paging file.
 * Due to the easy availability of full disk encryption or full volume encryption, ***DO NOT*** pull the plug on computer systems.
 
+### Mobile
+
+If the device is powered on, it may contain volatile encryption keys and should not be turned off. A power source should be connected as soon as possible to avoid the device losing power. Be sure to seize the charging cable to keep power to the device. Place the device in "Airplane Mode" and verify that Wi-Fi and Bluetooth are off. 
+
+If you cannot put the device in "AirplaneMode", place device in a Faraday Bag or double wrap in aluminum foil to keep signals from potentially altering the device. Keep device charging if at all possible.
+
+### Android
+
+In order to give the best chance of accessing the evidence at a later date, if the device is unlocked, then turn on USB debugging if possible. 
+
+In Android version 4.2 and above, the developer options screen is hidden. In order to turn on USB debugging go into the settings menu, and go to the "About phone" or "About tablet" menu where there should be a field showing the Android "build number". If the android build number is tapped seven times, developer mode is enabled and the "Developer options" menu will appear above the "About phone" menu. From there, USB debugging can be turned on. You may also be able to adjust the Display Screen Timeout feature to extend the length of time before Auto-Lock is enabled.
+
 ### Post-mortem acquisition
 
 At boot time, a PC, mobile phone, or media player executes boot activities that can overwrite previously cached data. Powered-off devices should never be turned on (unless done so by a forensic investigator), to ensure that existing data is not erased and that new data is not written. Devices can appear as if they are off while in a sleep or hibernate state. As a simple test, the mouse can be moved and monitors (if any) can be switched on to check state. Even if they are in an off state, photograph the screen and ports.
@@ -65,7 +77,11 @@ Depending on the incident type, use a pair of latex gloves, to avoid leaving add
 
 Phones, media players, laptops, or any devices that can communicate over any network can potentially be altered while being seized or even after they have been seized. This can be caused by either deliberate tampering or unintentional changes (humidity or electricity). Switch the device to airplane mode to avoid any further connections and communications, and consider the use of containers that can shield the device from external radiofrequency (RF) sources, such as a Faraday bag.
 
-When investigating portable and mobile devices ***in an already off state***, it is suggested that the battery be removed (if possible) and also placed in an evidence bag to ensure that there will be no way of accidentally turning on the device once unplugged.  Note that removing the battery can ***alter the contents in the volatile memory***, even when in an off state. Whether to remove the battery depends on the type of incident.
+When investigating portable and mobile devices ***in an already off state*** and not damaged, do not turn it back on. Remove the battery (if possible) and if required (Note that removing the battery can ***alter the contents in the volatile memory***, even when in an off state. Whether to remove the battery depends on the type of incident). Place it in an evidence bag to ensure that there will be no way of accidentally turning on the device once unplugged.
+
+If the device is submerged in liquid, or had liquid damage, remove it from the liquid only if you feel you can remove the battery (normally possible with Android devices). Once the battery is removed, place the device back in the liquid. 
+
+Collect basic information about the device including Model, Serial Number, Android OS or iOS Version and/or Networks.
 
 ### Write blocking
 
