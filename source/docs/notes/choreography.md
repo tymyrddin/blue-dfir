@@ -63,12 +63,6 @@ If the device is powered on, it may contain volatile encryption keys and should 
 
 If you cannot put the device in "AirplaneMode", place device in a Faraday Bag or double wrap in aluminum foil to keep signals from potentially altering the device. Keep device charging if at all possible.
 
-### Android
-
-In order to give the best chance of accessing the evidence at a later date, if the device is unlocked, then turn on USB debugging if possible. 
-
-In Android version 4.2 and above, the developer options screen is hidden. In order to turn on USB debugging go into the settings menu, and go to the "About phone" or "About tablet" menu where there should be a field showing the Android "build number". If the android build number is tapped seven times, developer mode is enabled and the "Developer options" menu will appear above the "About phone" menu. From there, USB debugging can be turned on. You may also be able to adjust the Display Screen Timeout feature to extend the length of time before Auto-Lock is enabled.
-
 ### Post-mortem acquisition
 
 At boot time, a PC, mobile phone, or media player executes boot activities that can overwrite previously cached data. Powered-off devices should never be turned on (unless done so by a forensic investigator), to ensure that existing data is not erased and that new data is not written. Devices can appear as if they are off while in a sleep or hibernate state. As a simple test, the mouse can be moved and monitors (if any) can be switched on to check state. Even if they are in an off state, photograph the screen and ports.
