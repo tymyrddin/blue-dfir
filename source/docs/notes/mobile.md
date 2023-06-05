@@ -44,7 +44,7 @@ Starting from Android 4.2.2, Google has introduced the Secure USB debugging opti
 
 When the ***USB debugging*** option is selected, the device will run the adb daemon (`adbd`) in the background and will continuously look for a USB connection. The daemon will usually run under a non-privileged shell user account and thus will not provide access to the complete data. However, on rooted phones, `adbd` will run under the `root` account and thus provide access to all the data. It is not recommended to ***root a device*** to gain full access unless all other forensic methods fail. Should you choose to root an Android device, the methods must be well-documented and tested prior to attempting it on real evidence.
 
-### Android Debug Bridge
+### Use ADB
 
 The Android Debug Bridge (ADB) is a programming tool for debugging Android-based devices. The daemon on the Android device communicates with the server on the host PC through USB or TCP, which communicates with the end-client users via TCP.
 
@@ -63,7 +63,29 @@ nina@tardis:~$ adb shell
 a50:/ $ 
 ```
 
-Many linux commands can be used. See cheatsheets.
+Many linux commands can be used. Use adb shell to determine if a device is rooted. The shell will appear one of two ways, either with `$` or `#`.
+
+To extract data using adb pull (transfer files from the device to the local workstation):
+
+```text
+adb pull [-a] path/of/file/on/phone path/of/file/on/computer
+```
+
+The adb backup functionalityallows for backing up application data to a local computer over adb. ***This does not require root.*** When a developer makes an app, it is set to allow backups by default. It seems the vast majority of developers leave the default setting. Most Google applications disable backups; full application data from apps such as Gmail and Google Maps will therefor not be included.
+
+```text
+adb backup [-f <file>] [-apk|-noapk] [-obb|-noobb] [-shared|-noshared] [-all] [-system|-nosystem] [<packages…>]
+```
+
+When making a backup, the user must approve it on the device => backups cannot be made without bypassing screen locks.
+
+The resulting backup data is stored as an `.ab` file but is actually a `.tar` file compressed with the ***Deflate*** algorithm. If a password was entered on the device when the backup was created, the file will also be ***AES*** encrypted. 
+
+To add in a tar header, try opening the `.ab` file with a hex editor and replace the first 24 Bytes (`0x18`) with `1F 8B 08 00 00 00 00 00`, then save as `.tar.gz` file. For an encrypted backup, use [nelenkov / android-backup-extractor](https://github.com/nelenkov/android-backup-extractor/releases):
+
+```text
+java -jar abe.jar unpack /path/to/backup.ab /path/to/backup.tar <password>
+```
 
 ### Stay awake
 
@@ -81,6 +103,7 @@ There are three types of screen lock mechanisms offered by Android:
 * Android was the first smartphone to introduce a ***pattern lock***, a pattern or design on the phone and the same pattern must be drawn to unlock the device. 
 * ***PIN code*** is the most common lock option and is a 4-digit number that needs to be entered to unlock the device. 
 * Unlike the PIN, which takes four digits, the alphanumeric ***passcode*** includes letters, as well as digits.
+* ***Smart Lock***, which can be a Trusted Face, Trusted Location, or a Trusted Device.
 
 ### Delete gesture.key
 
@@ -93,23 +116,6 @@ This method works when the device is rooted. This method may not be successful o
 adb shell
 cd /data/system
 rm gesture.key
-```
-
-3. Reboot the device.
-4. Unlock device with whatever pattern.
-
-### Update the settings.db file
-
-1. Connect your device with the computer via USB cable.
-2. Open command prompt and execute:
-
-```text
-adb shell
-cd /data/data/com.android.providers.settings/databases
-sqlite3 settings.db
-update system set value=0 where name='lock_pattern_autolock';
-update system set value=0 where name='lockscreen.lockedoutpermanently';
-.quit
 ```
 
 3. Reboot the device.
