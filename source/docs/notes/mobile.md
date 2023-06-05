@@ -74,7 +74,48 @@ Enable the ***Stay awake*** setting: If the Stay awake option is selected and th
 Screen timeout is the time for which the device will be effectively active once it is unlocked. The location to access this setting varies
 depending upon the model of the device. On a Samsung Galaxy, you can set it by navigating to ***Settings -> Display -> ScreenTimeout***.
 
-### Example using busybox
+## Screen lock bypassing techniques Android
+
+There are three types of screen lock mechanisms offered by Android:
+
+* Android was the first smartphone to introduce a ***pattern lock***, a pattern or design on the phone and the same pattern must be drawn to unlock the device. 
+* ***PIN code*** is the most common lock option and is a 4-digit number that needs to be entered to unlock the device. 
+* Unlike the PIN, which takes four digits, the alphanumeric ***passcode*** includes letters, as well as digits.
+
+### Delete gesture.key
+
+This method works when the device is rooted. This method may not be successful on unrooted devices. Also note, deleting the `gesture.key` file will remove the pattern lock on the device, but this will permanently change the device, as the pattern lock is gone. 
+
+1. Connect the device to the forensic workstation using a USB cable.
+2. Open the command prompt and execute:
+
+```text
+adb shell
+cd /data/system
+rm gesture.key
+```
+
+3. Reboot the device.
+4. Unlock device with whatever pattern.
+
+### Update the settings.db file
+
+1. Connect your device with the computer via USB cable.
+2. Open command prompt and execute:
+
+```text
+adb shell
+cd /data/data/com.android.providers.settings/databases
+sqlite3 settings.db
+update system set value=0 where name='lock_pattern_autolock';
+update system set value=0 where name='lockscreen.lockedoutpermanently';
+.quit
+```
+
+3. Reboot the device.
+4. Unlock device with whatever pattern.
+
+## Imaging using busybox
 
 ADB usually runs with a non-privileged account. It will not provide access to internal application data. On a rooted phone, ADB will run as root and provide access to internal application data and OS files and folders.
 
@@ -100,7 +141,7 @@ mount
 Choose the partitions you wish to image and note their paths, for example for the data partition, something like `/dev/block/bootdevice/by-name/userdata`.
 
 Set up connection between the workstation and the mobile device, forwarding port `8080`:
-* 
+
 Workstation:
 
 ```text
@@ -120,6 +161,7 @@ nc 127.0.0.1 8080 > android_data.dd
 ```
 
 [Start analysis on the image disk](android.md), using sleuthkit tools or Autopsy.
+
 
 ## Resources
 
