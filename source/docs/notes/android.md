@@ -4,12 +4,10 @@
 
 The file hierarchy in Android resembles a [Linux file system hierarchy](linux.md), but based on the device manufacturer and the underlying Linux version, it may have a few insignificant changes. 
 
-* The `/boot` partition has the information and files required for the phone to boot. It contains the kernel and RAM disk, so without this
-partition, the phone cannot start its processes. Data residing in RAM is rich in value and should be captured during a forensic acquisition. 
+* The `/boot` partition has the information and files required for the phone to boot. It contains the kernel and RAM disk. Data residing in RAM is rich in value and can be captured during a forensic acquisition. 
 * The `/system` partition contains system-related files other than the kernel and RAM disk. Never delete.
 * `/recovery` is designed for backup purposes and allows the device to boot into recovery mode.
-* The `/data` contains the data of each application. Most of the data belonging to the user, such as the contacts, SMS, and dialed numbers, is
-stored in this folder.
+* The `/data` contains the data of each application. Most of the data belonging to the user, such as the contacts, SMS, and dialed numbers, is stored in this folder.
 * `/cache` is used to store the frequently accessed data and some logs for faster retrieval. The data residing here may no longer be present in the `/data`partition.
 * `/misc` contains information about miscellaneous settings. These settings mostly define the state of the device (on/off), hardware settings, USB settings, etc.
 * The `/sdcard` partition tholds all the information present on the SD card. It is valuable as it can contain information such as pictures, videos, files, documents, and so on.

@@ -22,6 +22,7 @@ Partition layout varies between device manufacturers and versions. Some of the c
 
 ## Android logical data extraction
 
+* Connect the device to a workstation.
 * Enable ***USB debugging***.
 * Enable the ***Stay awake*** setting.
 * Increase ***screen timeout***.
@@ -98,14 +99,14 @@ depending upon the model of the device. On a Samsung Galaxy, you can set it by n
 
 ## Screen lock bypassing techniques Android
 
-There are three types of screen lock mechanisms offered by Android:
+There are several types of screen lock mechanisms offered by Android:
 
 * Android was the first smartphone to introduce a ***pattern lock***, a pattern or design on the phone and the same pattern must be drawn to unlock the device. 
 * ***PIN code*** is the most common lock option and is a 4-digit number that needs to be entered to unlock the device. 
 * Unlike the PIN, which takes four digits, the alphanumeric ***passcode*** includes letters, as well as digits.
 * ***Smart Lock***, which can be a Trusted Face, Trusted Location, or a Trusted Device.
 
-Lock screens are the most challenging aspect of Android forensic examinations because [there are so many different devices, and things change fast](https://android.stackexchange.com/questions/tagged/lock-screens). For example, Samsung intentionally builds phones which are extremely hard to break into. This is a conscious design decision, because many users do credit card payments, banking, and social media, where, if they would lose their phone and a bad person found it, an easy-to-break-into device would have potentially catastrophic results. Anyway, below are some that can be tried.
+[Lock screens](https://android.stackexchange.com/questions/tagged/lock-screens) are the most challenging aspect of Android forensic examinations because there are over 12,000 different Android models from hundreds of different manufacturers, and things change fast. For example, Samsung intentionally builds phones which are extremely hard to break into. This is a conscious design decision, because many users do credit card payments, banking, and social media, where, if they would lose their phone and a bad person found it, an easy-to-break-into device would have potentially catastrophic results. Anyway, below are some ways that can be tried.
 
 ### Delete gesture.key
 
@@ -170,7 +171,7 @@ Rooting a device may void a warranty, since root opens the system to vulnerabili
 
 The process of rooting varies depending on the underlying device manufacturer. However, rooting any device usually involves exploiting a security bug in the device's firmware and then copying the `su` (superuser) binary to a location in the current process's path (`/system/xbin/su`) and granting it executable permissions with the `chmod` command.
 
-Most of the rooting methods begin by flashing a modified recovery to the recovery partition. After that, you can issue an update, which can root the device. These actions do not have to be done manually, as software is available for most of the models, which can root a phone with a single click.
+Most of the rooting methods begin by flashing a modified recovery to the recovery partition. After that, you can issue an update, which can root the device. 
 
 Starting from Android 7.x, Google has started strictly enforcing [verified boot](https://source.android.com/docs/security/features/verifiedboot/verified-boot) on devices, to guarantee that the software on the device is not modified before booting into the normal mode, and Samsung [patched the kernel to prevent root access](https://en.wikipedia.org/wiki/Samsung_Knox) from being granted to apps even after rooting was successful since the release of Android Oreo. This patch prevents unauthorized apps from changing the system and deters rooting. The tip of the iceberg. 
 
@@ -228,3 +229,5 @@ nc 127.0.0.1 8080 > android_data.dd
 * [Android Debug Bridge (adb)](https://developer.android.com/tools/adb)
 * [Kingo SuperUser](https://www.kingoapp.com/)
 * [How to do a forensic analysis of Android 11 artifacts](https://www.semanticscholar.org/paper/How-to-do-a-forensic-analysis-of-Android-11-Delija-Sudec/e9e48ca6c3a5a21c6233c30f220db1a82a89441e)
+* [Odin](https://www.androidcentral.com/root)
+* [Heimdall](https://github.com/Benjamin-Dobell/Heimdall)

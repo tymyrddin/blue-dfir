@@ -46,16 +46,6 @@ Though DFIR is traditionally a reactive security function, tooling and advanced 
 ----
 
 .. toctree::
-   :maxdepth: 1
-   :includehidden:
-   :caption: Coding
-
-   Powershell scripts <https://github.com/tymyrddin/scripts-ps>
-   Bash/shell scripts <https://github.com/tymyrddin/scripts-bash>
-
-----
-
-.. toctree::
    :glob:
    :maxdepth: 1
    :includehidden:
@@ -96,6 +86,16 @@ Though DFIR is traditionally a reactive security function, tooling and advanced 
    docs/thm/bob.md
    docs/thm/feelings.md
    docs/thm/nightmare.md
+
+----
+
+.. toctree::
+   :maxdepth: 1
+   :includehidden:
+   :caption: More practice
+
+   DFRWS Forensic challenges <https://dfrws.org/forensic-challenges/>
+   HN/P challenges <https://www.honeynet.org/challenges/>
 
 ----
 
