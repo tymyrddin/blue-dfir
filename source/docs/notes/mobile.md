@@ -31,7 +31,7 @@ Partition layout varies between device manufacturers and versions. Some of the c
 
 1. Identify the device cable: The physical USB interface of an Android device might change from manufacturer to manufacturer and from device to device: Mini - A USB, Micro - B USB, Co-axial (Nokia), D Sub-miniature (Samsung and LG devices)
 2. Install the device drivers if the device is not recognised. Because Android is allowed to be modified and customized by the manufacturers, there is no single generic driver that works for all Android devices. Each manufacturer writes its own proprietary drivers and distributes them over the internet. Some Android forensic toolkits come with some generic drivers or a set of the most widely used drivers.
-3. Access: connect the unlocked Android device to the computer directly using the USB cable. The Android device will appear as a new drive and you will be able to access the files on the external storage. Some older Android devices may not be accessible unless the ***Turn on USB storage*** option is enabled. In some Android phones (especially with HTC), the device may expose more than one functionality when connected with a USB cable. Mount it as a disk drive to access the SD card.
+3. Access: connect the unlocked Android device to the computer directly using the USB cable. The Android device will appear as a new drive, and you will be able to access the files on the external storage. Some older Android devices may not be accessible unless the ***Turn on USB storage*** option is enabled. In some Android phones (especially with HTC), the device may expose more than one functionality when connected with a USB cable. Mount it as a disk drive to access the SD card.
 4. In order to give the best chance of accessing the evidence at a later date, if the device is unlocked, then turn on USB debugging if possible. 
 
 ### USB debugging
@@ -105,11 +105,11 @@ There are three types of screen lock mechanisms offered by Android:
 * Unlike the PIN, which takes four digits, the alphanumeric ***passcode*** includes letters, as well as digits.
 * ***Smart Lock***, which can be a Trusted Face, Trusted Location, or a Trusted Device.
 
-Lock screens are the most challenging aspect of Android forensic examinations. For example, Samsung intentionally builds phones which are extremely hard to break into. This is a conscious design decision, because many users do credit card payments, banking, and social media, where, if they would lose their phone and a bad person found it, an easy-to-break-into device would have potentially catastrophic results.
+Lock screens are the most challenging aspect of Android forensic examinations because [there are so many different devices, and things change fast](https://android.stackexchange.com/questions/tagged/lock-screens). For example, Samsung intentionally builds phones which are extremely hard to break into. This is a conscious design decision, because many users do credit card payments, banking, and social media, where, if they would lose their phone and a bad person found it, an easy-to-break-into device would have potentially catastrophic results. Anyway, below are some that can be tried.
 
 ### Delete gesture.key
 
-This method works when the device is rooted. This method may not be successful on unrooted devices. Also note, deleting the `gesture.key` file will remove the pattern lock on the device, but this will permanently change the device, as the pattern lock is gone. 
+This method only works when the device is rooted. Also note, deleting the `gesture.key` file will remove the pattern lock on the device, but this will permanently change the device, as the pattern lock is gone. 
 
 1. Connect the device to the forensic workstation using a USB cable.
 2. Open the command prompt and execute:
@@ -121,7 +121,60 @@ rm gesture.key
 ```
 
 3. Reboot the device.
-4. Unlock device with whatever pattern.
+4. Unlock device with any pattern.
+
+### Modified recovery mode
+
+There are many enthusiastic Android users who install custom ROM through a modified recovery module. Custom recoveries come in many shapes and sizes (CWM, TWRP, etc.), made especially to flash custom ROMs (unofficial builds of Android) and to make under-the-hood changes and modifications to a device. And that can be used for a bypass.
+
+1. Reboot into recovery mode (for example TWRP).
+2. Go to ***Advanced -> File Manager*** 
+3. Navigate to `\data\system` and locate the files you need to remove (for example `gesture.key`, `password.key`, `gatekeeper.pin.key` or `gatekeeper.pattern.key` file)
+4. Long-press on the `*.key` file to reveal more options and choose ***Rename File***, and add the extension `.old` to the filename.
+5. Confirm the renaming. 
+6. Click ***Reboot System***. Lock screen has been removed completely or accepts any pattern/PIN/password.
+
+### Flashing a new recovery partition
+
+Most Android devices come with a locked bootloader. When Developer options are enabled, you can [unlock the bootloader](https://source.android.com/docs/core/architecture/bootloader/locking_unlocking) to flash new images. The fastboot utility can be used to flash the recovery partition of an Android device with a modified image. It is a diagnostic protocol that comes with the SDK package, used primarily to modify the flash file system through a USB connection from a host computer.
+
+Once the recovery is flashed, boot the device in recovery mode, mount the `/data` and `/system` partitions, and use `adb` to remove the `gesture.key` file. Reboot the phone, and you should be able to bypass the screen lock.
+
+### Using automated tools
+
+There are several automated solutions available in the market for unlocking Android devices. Commercial tools, such as [XRY](https://www.msab.com/product/xry-extract/), are capable of bypassing the screen locks, but most of them require USB debugging to be enabled.
+
+### Using Android device manager
+
+Most Android phones come with a service called Android Device Manager, which helps the owner of a device to locate their lost phone. Such services can also be used to unlock a device, ***if*** the device runs Android 8 or lower. For Android 9 or higher, you may be prompted to provide the lock screen PIN for the Android device you want to locate, so it doesn't work. 
+
+While Google has [Find My Device](https://www.google.com/android/find/), Samsung has [SmartThings Find](https://smartthingsfind.samsung.com/login). When you go to the site, log into the Samsung account. A map and a list on the left-hand side appears with all the Samsung devices that are associated with the account and are currently switched on, connected to Wi-Fi, and have Remote Unlock activated. Select the locked device, and the options in a window in the upper right are shown. One of those options is Unlock. Like Android Smart Lock, Remote Unlock must be set up in advance to be effective.
+
+### Using the Forgot Password/Forgot Pattern option
+
+Devices running on Android 4.4 and earlier have the default ***Forgot the Pattern*** kind of reset, and it uses the Google Account as the primary reset option.
+Knowing the username and password of the primary Gmail address that is configured on the device, and if the Google account was saved on the device, it may be possible to change the PIN, password, or swipe on the device.
+
+### Bypassing third-party lock screens
+
+If the screen lock is a third-party app, rather than the built-in lock, it can be bypassed by booting into safe mode and disabling it. To boot into safe mode on Android device 4.1 or later, 
+
+1. Long-press the power button until the power options menu appears. 
+2. Long-press the Power Off option, and you'll be asked if you want to reboot your Android device into safe mode. Tap the OK button.
+3. In safe mode, disable the third-party lock screen app or uninstall it.
+4. Reboot the device, and you should be able to access it without any lock screen.
+
+## Rooting
+
+Rooting a device may void a warranty, since root opens the system to vulnerabilities and provides the user with superuser capabilities. 
+
+The process of rooting varies depending on the underlying device manufacturer. However, rooting any device usually involves exploiting a security bug in the device's firmware and then copying the `su` (superuser) binary to a location in the current process's path (`/system/xbin/su`) and granting it executable permissions with the `chmod` command.
+
+Most of the rooting methods begin by flashing a modified recovery to the recovery partition. After that, you can issue an update, which can root the device. These actions do not have to be done manually, as software is available for most of the models, which can root a phone with a single click.
+
+Starting from Android 7.x, Google has started strictly enforcing [verified boot](https://source.android.com/docs/security/features/verifiedboot/verified-boot) on devices, to guarantee that the software on the device is not modified before booting into the normal mode, and Samsung [patched the kernel to prevent root access](https://en.wikipedia.org/wiki/Samsung_Knox) from being granted to apps even after rooting was successful since the release of Android Oreo. This patch prevents unauthorized apps from changing the system and deters rooting. The tip of the iceberg. 
+
+There are over 12,000 different Android models from hundreds of different manufacturers. Almost all of them have been designed so that they are hard to root. For more information about rooting Android phones, check [XDA Developers](https://www.xda-developers.com/root/) for the particular model. 
 
 ## Imaging using busybox
 
@@ -169,7 +222,6 @@ nc 127.0.0.1 8080 > android_data.dd
 ```
 
 [Start analysis on the image disk](android.md), using sleuthkit tools or Autopsy.
-
 
 ## Resources
 
