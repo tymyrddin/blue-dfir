@@ -105,6 +105,8 @@ There are three types of screen lock mechanisms offered by Android:
 * Unlike the PIN, which takes four digits, the alphanumeric ***passcode*** includes letters, as well as digits.
 * ***Smart Lock***, which can be a Trusted Face, Trusted Location, or a Trusted Device.
 
+Lock screens are the most challenging aspect of Android forensic examinations. For example, Samsung intentionally builds phones which are extremely hard to break into. This is a conscious design decision, because many users do credit card payments, banking, and social media, where, if they would lose their phone and a bad person found it, an easy-to-break-into device would have potentially catastrophic results.
+
 ### Delete gesture.key
 
 This method works when the device is rooted. This method may not be successful on unrooted devices. Also note, deleting the `gesture.key` file will remove the pattern lock on the device, but this will permanently change the device, as the pattern lock is gone. 
