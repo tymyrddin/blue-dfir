@@ -14,6 +14,13 @@ The investigation process identifies communicated hosts in terms of time, freque
 
 **Note that** the network evidence capture and investigation process is meant to be systematic. Having enough data and the right timeline capture for a successful network forensics investigation is crucial.
 
+## Primary purposes of network forensics
+
+- **Security Operations (SOC):** Daily security monitoring activities on system performance and health, user behaviour, and security issues.
+- **Incident Handling/Response and Threat Hunting:** During/Post-incident investigation activities on understanding the reason for the incident, detecting malicious and suspicious activity, and investigating the data flow content.
+
+Traffic investigation actions fall under Network forensics, and also under [NTA](https://nta.tymyrddin.dev/). For example, NetworkMiner, used in network forensics and NTA, is capable of processing and handling packet pictures and live traffic. Both live and captured traffic data sources are valuable for forensics investigations, but the main purpose of using NetworkMiner is to investigate the overall flow/condition of a limited amount of traffic, not for a long in-depth live traffic investigation.
+
 ## Network forensics use cases
 
 - **Network discovery:** Discovering the network to overview connected devices, rogue hosts and network load. 
@@ -42,6 +49,12 @@ The investigation process identifies communicated hosts in terms of time, freque
 - **Time zone issues:** Using a common time zone is important for big-scale event investigation.  Especially when working with multiple resources over different time  zones, usage of different time zones create difficulties in event  correlation.
 - **Lack of logs:** Network forensics is not limited to investigating the network traffic data.  Network devices and event logs are crucial in event correlation and  investigation hypotheses. This fact is known by the attackers/threats as well; therefore these logs are often erased by them, in order to make  the investigation more difficult.
 
+## Investigated data types in network forensics
+
+- Live Traffic
+- Traffic Captures (full packet captures and network flows)
+- Log Files
+
 ## Sources of evidence
 
 Capturing proper network traffic requires knowledge and tools. Usually, there is a single chance of gathering the live traffic as evidence. There are multiple evidence resources to gather Network forensics data:
@@ -60,15 +73,3 @@ Capturing proper network traffic requires knowledge and tools. Usually, there is
 - Central Log Servers
 - Logs (IDS/IPS, Application, OS, Device)
 
-## Primary purposes of network forensics
-
-- **Security Operations (SOC):** Daily security monitoring activities on system performance and health, user behaviour, and security issues.
-- **Incident Handling/Response and Threat Hunting:** During/Post-incident investigation activities on understanding the reason for the incident, detecting malicious and suspicious activity, and investigating the data flow content.
-
-Traffic investigation actions fall under Network forensics, and also under [NTA](https://nta.tymyrddin.dev/). For example, NetworkMiner, used in network forensics and NTA, is capable of processing and handling packet pictures and live traffic. Both live and captured traffic data sources are valuable for forensics investigations, but the main purpose of using NetworkMiner is to investigate the overall flow/condition of a limited amount of traffic, not for a long in-depth live traffic investigation. 
-
-## Investigated data types in network forensics
-
-- **Live Traffic**
-- **Traffic Captures (full packet captures and network flows)**
-- **Log Files**
