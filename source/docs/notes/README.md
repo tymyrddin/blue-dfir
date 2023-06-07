@@ -20,4 +20,5 @@ Store information for reference later.
 * [Mobile data extraction](mobile.md)
 * [iOS analysis](ios.md)
 * [Android analysis](android.md)
+* [Network forensics](network.md)
 * [Resources](resources.md)

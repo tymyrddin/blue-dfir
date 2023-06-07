@@ -53,6 +53,18 @@ Flash Friendly File System (F2FS) was released in February 2013 to support Samsu
 
 Robust File System (RFS) supports NAND flash memory on Samsung devices. RFS can be summarized as a FAT16 (or FAT32) file system where journaling is enabled through a transaction log.
 
+## Application data storage
+
+Android devices store a lot of sensitive data through the use of apps installed by the manufacturer, that come along with Android, wireless, and apps installed by the user from various sources. These store different types of data on the device, which contain information that may be relevant to an investigation.
+
+Data belonging to applications can be stored internally or externally. In the case of external storage (SD card), data can be stored anywhere. In the case of internal storage, the location is in the `/data/data` subdirectory. For example, the default Android email app has a package named `com.android.email`, and the internal data is stored in `/data/data/com.android.email`.
+
+* ***Shared Preferences*** provides a framework to store key-value pairs of primitive data types in the `.xml` format. Primitive data types include Boolean, float, int, long, and string. Strings are stored in the Universal Character Set Transformation Format-8 (UTF-8) format. These files are stored in the application's `/data/data/<package_name>/shared_prefs` path.
+*  The files stored in the internal storage are located in the application's `/data/data` subdirectory. This data is private and cannot be accessed by other applications. Even the device owner is prevented from accessing the files (except `root`).
+* External storage can be any removable media. In the case of a removable SD card, data can be used on other devices just by removing the SD card and inserting it into any other device. SD cards are usually formatted with the FAT32 filesystem, but other filesystems, such as EXT3 and EXT4, can also be used. This data is public and can be accessed by other applications, if the requesting app has the necessary permissions. Large files, such as images and videos, loaded by an app are often stored in external storage for faster retrieval.
+* SQLite is a popular database format present in many mobile systems, and a source of forensic data. The SQLite files used by the apps are stored at `/data/data/<ApplicationPackageName>/databases`. 
+* The network can also be used to store and retrieve data on a user's web-based services. To do network operations, the classes in the `java.net.*` and `android.net.*` packages are used to provide developers with the low-level APIs that are necessary to interact with the network, web servers, etc.
+
 ## Analysing an image using Autopsy
 
 1. Open the Autopsy tool and select the Create New Case option.

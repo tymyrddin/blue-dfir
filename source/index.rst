@@ -41,6 +41,7 @@ Though DFIR is traditionally a reactive security function, tooling and advanced 
    docs/notes/mobile.md
    docs/notes/ios.md
    docs/notes/android.md
+   docs/notes/network.md
    docs/notes/resources.md
 
 ----
