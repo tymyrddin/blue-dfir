@@ -17,7 +17,7 @@ Store information for reference later.
 * [Windows analysis](windows.md)
 * [Linux analysis](linux.md)
 * [macOS analysis](macos.md)
-* [Mobile data extraction](mobile.md)
+* [Mobile forensics](mobile.md)
 * [iOS analysis](ios.md)
 * [Android analysis](android.md)
 * [Network forensics](network.md)

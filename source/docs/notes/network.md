@@ -1,12 +1,10 @@
 # Network forensics                            
 
-Network forensics is a specific subdomain of the Forensics domain, and it  focuses on network traffic investigation. Network forensics discipline covers the work done to access information transmitted by listening and  investigating live and recorded traffic, gathering evidence/artefacts and understanding potential problems. 
+Network forensics is a specific subdomain of the Forensics domain, and it  focuses on network traffic investigation. Network forensics discipline covers the work done to access information transmitted by listening and investigating live and recorded traffic, gathering evidence/artefacts and understanding potential problems. 
 
-Briefly, it is the action of recording packets of network traffic and creating investigatable sources and establishing a root–cause analysis of an event. The ultimate goal is to provide sufficient information to detect  malicious activities, security breaches, policy/regulation compliance, system health and user behaviour.
+IOW, it is the action of recording packets of network traffic and creating investigatable sources and establishing a root–cause analysis of an event. The ultimate goal is to provide sufficient information to detect malicious activities, security breaches, policy/regulation compliance, system health and user behaviour. 
 
-The investigation process identifies communicated hosts in terms of time, frequency, protocol, application and data.
-
-The investigation tries to answer the **5W**;
+The investigation process identifies communicated hosts in terms of time, frequency, protocol, application and data. An investigation tries to answer the **5W**;
 
 - Who (Source IP and port)
 - What (Data/payload)
@@ -14,7 +12,7 @@ The investigation tries to answer the **5W**;
 - When (Time and data)
 - Why (How/What happened)
 
-**Note that** the network evidence capture and investigation process should be systematic. Having enough data and the right timeline capture for a successful Network forensics investigation is crucial.
+**Note that** the network evidence capture and investigation process is meant to be systematic. Having enough data and the right timeline capture for a successful network forensics investigation is crucial.
 
 ## Network forensics use cases
 
@@ -46,8 +44,7 @@ The investigation tries to answer the **5W**;
 
 ## Sources of evidence
 
-Capturing proper network traffic requires knowledge and tools. Usually, there is a single chance of gathering the 
-live traffic as evidence. There are multiple evidence resources to gather Network forensics data:
+Capturing proper network traffic requires knowledge and tools. Usually, there is a single chance of gathering the live traffic as evidence. There are multiple evidence resources to gather Network forensics data:
 
 - TAPS
 - InLine Devices
@@ -66,14 +63,12 @@ live traffic as evidence. There are multiple evidence resources to gather Networ
 ## Primary purposes of network forensics
 
 - **Security Operations (SOC):** Daily security monitoring activities on system performance and health, user behaviour, and security issues.
-- **Incident Handling/Response and Threat Hunting:** During/Post-incident investigation activities on understanding the reason for the incident,  detecting malicious and suspicious activity, and investigating the data  flow content.
+- **Incident Handling/Response and Threat Hunting:** During/Post-incident investigation activities on understanding the reason for the incident, detecting malicious and suspicious activity, and investigating the data flow content.
+
+Traffic investigation actions fall under Network forensics, and also under [NTA](https://nta.tymyrddin.dev/). For example, NetworkMiner, used in network forensics and NTA, is capable of processing and handling packet pictures and live traffic. Both live and captured traffic data sources are valuable for forensics investigations, but the main purpose of using NetworkMiner is to investigate the overall flow/condition of a limited amount of traffic, not for a long in-depth live traffic investigation. 
 
 ## Investigated data types in network forensics
 
 - **Live Traffic**
 - **Traffic Captures (full packet captures and network flows)**
 - **Log Files**
-
-NetworkMiner is capable of processing and handling packet pictures and live traffic. Both live and captured traffic data sources are valuable for forensics investigations. 
-
-Traffic investigation actions fall under Network forensics "Traffic Analysis" subdomain. However, the main purpose of using NetworkMiner is to investigate the overall flow/condition of the limited amount of traffic, not for a long in-depth live traffic investigation.
