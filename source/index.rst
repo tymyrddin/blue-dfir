@@ -98,6 +98,7 @@ Though DFIR is traditionally a reactive security function, tooling and advanced 
    DFRWS Forensic challenges <https://dfrws.org/forensic-challenges/>
    HN/P challenges <https://www.honeynet.org/challenges/>
    Malware traffic analysis exercises <https://www.malware-traffic-analysis.net/training-exercises.html>
+   Geoguessr (Geolocation game) <https://www.geoguessr.com/>
 
 ----
 
