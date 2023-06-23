@@ -105,7 +105,7 @@ Though DFIR is traditionally a reactive security function, tooling and advanced 
 Books
 ---------------------------
 
-.. grid:: 4
+.. grid:: 3
     :gutter: 1
 
     .. grid-item-card::
@@ -123,8 +123,20 @@ Books
 
         .. image:: _static/images/bookcovers/learn-computer-forensics.png
 
+.. grid:: 3
+    :gutter: 1
+
     .. grid-item-card::
         :link: https://nostarch.com/practical-linux-forensics
 
         .. image:: _static/images/bookcovers/practical-linux-forensics.png
 
+    .. grid-item-card::
+        :link: https://nostarch.com/forensicimaging/
+
+        .. image:: _static/images/bookcovers/practical-forensic-imaging.png
+
+    .. grid-item-card::
+        :link: https://www.packtpub.com/product/practical-mobile-forensics-third-edition/9781788839198
+
+        .. image:: _static/images/bookcovers/practical-mobile-forensics.png
