@@ -21,6 +21,7 @@ extensions = [
     'sphinx_markdown_tables',
     'sphinx.ext.intersphinx',
     'sphinx_copybutton',
+    'sphinx_design',
 ]
 
 source_suffix = ['.rst', '.md']
@@ -85,4 +86,5 @@ myst_enable_extensions = [
     "amsmath",
     "dollarmath",
     "tasklist",
+    "colon_fence",
 ]

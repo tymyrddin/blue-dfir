@@ -102,5 +102,29 @@ Though DFIR is traditionally a reactive security function, tooling and advanced 
 
 ----
 
-.. image:: _static/images/books.png
-  :alt: Useful books
+Books
+---------------------------
+
+.. grid:: 4
+    :gutter: 1
+
+    .. grid-item-card::
+        :link: https://www.packtpub.com/product/digital-forensics-and-incident-response-third-edition/9781803238678
+
+        .. image:: _static/images/bookcovers/digital-forensics-incident-response.png
+
+    .. grid-item-card::
+        :link: https://www.packtpub.com/product/incident-response-in-the-age-of-cloud/9781800569218
+
+        .. image:: _static/images/bookcovers/ir-in-age-of-cloud.png
+
+    .. grid-item-card::
+        :link: https://www.packtpub.com/product/learn-computer-forensics/9781838648176
+
+        .. image:: _static/images/bookcovers/learn-computer-forensics.png
+
+    .. grid-item-card::
+        :link: https://nostarch.com/practical-linux-forensics
+
+        .. image:: _static/images/bookcovers/practical-linux-forensics.png
+
