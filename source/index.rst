@@ -15,10 +15,10 @@ Though DFIR is traditionally a reactive security function, tooling and advanced 
    :includehidden:
    :caption: Testlab
 
-   Drives <https://testlab.tymyrddin.dev/docs/drives/README>
+   Ventoy <https://testlab.tymyrddin.dev/docs/drives/ventoy>
    Kali <https://testlab.tymyrddin.dev/docs/vm/kali>
    CAINE <https://testlab.tymyrddin.dev/docs/vm/caine>
-   SquashFS forensic evidence container <https://testlab.tymyrddin.dev/docs/dfir/squashfs>
+   SquashFS <https://testlab.tymyrddin.dev/docs/dfir/squashfs>
    DFIR tools <https://testlab.tymyrddin.dev/docs/dfir/README>
    Mobile tools <https://testlab.tymyrddin.dev/docs/mobile/readme>
 
