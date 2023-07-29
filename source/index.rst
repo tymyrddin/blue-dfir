@@ -17,6 +17,7 @@ Though DFIR is traditionally a reactive security function, tooling and advanced 
 
    Ventoy <https://testlab.tymyrddin.dev/docs/drives/ventoy>
    Kali <https://testlab.tymyrddin.dev/docs/vm/kali>
+   SIFT with REMnux <https://testlab.tymyrddin.dev/docs/vm/sift-remnux.html>
    CAINE <https://testlab.tymyrddin.dev/docs/vm/caine>
    SquashFS <https://testlab.tymyrddin.dev/docs/dfir/squashfs>
    DFIR tools <https://testlab.tymyrddin.dev/docs/dfir/README>
