@@ -85,30 +85,11 @@ The original evidence should only be used to create forensic copies or images. A
 
 ### Data imaging and hashing
 
-***Imaging*** is the exact copying of data either as a file, folder, partition, or entire storage media or drive. When doing a regular copy of files and folders, not all files may be copied due to their attributes being set to the system or even hidden. To prevent files from being left out, a ***bit-stream copy*** is used in which every bit is copied or imaged exactly as it is on the current medium as if taking a picture or snapshot of the data, creating a ***physical image***.
+[Imaging](acquisition.md) is the exact copying of data either as a file, folder, partition, or entire storage media or drive. When doing a regular copy of files and folders, not all files may be copied due to their attributes being set to the system or even hidden. To prevent files from being left out, a ***bit-stream copy*** is used in which every bit is copied or imaged exactly as it is on the current medium as if taking a picture or snapshot of the data, creating a ***physical image***.
 
 A digital signature (cryptographic hash) is calculated both for the original media and for the copy, to verify that the evidence was not tampered with or modified after the evidence was acquired. The stronger the cryptographic algorithm used, the less chance of it being attacked or compromised. This means that the integrity of the evidence and physical images created remain intact, which will prove useful in forensic cases and expert testimony.
 
-### Image sizes and disk space requirements
-
-* Can the attached storage be analysed in place without taking a forensic image?
-* What is the size of the subject disk?
-* What is the available space on the examiner’s machine? 
-* What is the potential for image compression?
-* How much space do forensic tools need for processing and temporary files?
-* What is the estimated number of files to be extracted for further analysis?
-* How much memory and swap space is available on the examiner’s machine?
-* Is there a possibility of more subject disks being added to the same case or incident?
-* Is there an expectation to separately extract all slack or unallocated disk space?
-* Are there plans to extract individual partitions (possibly including swap)?
-* Is there a potential need to convert from one forensic format to another?
-* Do disk images need to be prepared for transport to another location?
-* Do subject disks contain virtual machine images to separately extract and analyse?
-* Do subject disks contain large numbers of compressed and archive files?
-* Are subject disks using full-disk encryption?
-* Is there a need to burn images to another disk or DVDs for storage or transport?
-* Is there a need to carve files from a damaged or partially overwritten filesystem?
-* How are backups of the examiner host performed?
+The standard cryptographic algorithms used in digital forensics are Message Digest 5 (MD5) and the Secure Hashing Algorithm (SHA-1). MD5 creates a 128-bit digital fingerprint, SHA-1 produces a 160-bit digital fingerprint.
 
 ### Volatile evidence
 
@@ -128,8 +109,7 @@ RAM is considered to be the most volatile of all volatile data.
 
 Collecting the volatile data may not always be possible, depending on the specific set of circumstances on the scene. 
 If, for example, there is a destructive process running on the machine and the information to be collected is being altered or overwritten, you may not want to take the time to collect the RAM as evidence is being manipulated.
-If it is a remote connection causing the destructive process, document the connection, sever the connection, and
-then collect the RAM. It depends. 
+If it is a remote connection causing the destructive process, document the connection, sever the connection, and then collect the RAM. It depends. 
 
 If the attacker is connected remotely and is accessing highly sensitive data, you will probably want to interrupt the connection.If it is not critical information, it may be useful to let the attacker maintain access while you collect the RAM.
 
@@ -138,10 +118,6 @@ If the attacker is connected remotely and is accessing highly sensitive data, yo
 * A forensic copy is a straight bit-for-bit copy of the source to the destination. Not very common. Make sure the  destination device has no old data on it to prevent cross-contamination between the current and a past investigation. Recover deleted files, file slack, and partition slack. 
 * A forensic image or forensic evidence file is a bit-for-bit copy of the source device, with the data stored in a forensic image format (DD, E01, AFF). Recover deleted files, file slack, and partition slack.
 * A logical forensic image is restricted to specific datasets. It is not allowed to access the entire container. This can be used when extracting data from a server (the server can not be shut down) by making logical copies of the files and folders pertinent to an investigation. Deleted files, file slack, and partition slack are not recovered.
-
-### Hashes
-
-The standard cryptographic algorithms used in digital forensics are Message Digest 5 (MD5) and the Secure Hashing Algorithm (SHA-1). MD5 creates a 128-bit digital fingerprint, SHA-1 produces a 160-bit digital fingerprint.
 
 ## File recovery and data carving
 

@@ -1,6 +1,6 @@
 # Image acquisition
 
-Maximizing the amount of data extracted from a storage medium, minimizing the disturbance to the storage device and medium, preserving the collected evidence, and documenting the process (including errors).
+Maximizing the amount of data extracted from a storage medium, minimising the disturbance to the storage device and medium, preserving the collected evidence, and documenting the process (including errors).
 
 Assumptions:
 
@@ -8,6 +8,27 @@ Assumptions:
 * The storage device has been positively identified.
 * The appropriate write-blocking mitigation is in place to prevent modification of the subject drive.
 * Disk capacity planning has been performed to ensure disk space is not an issue.
+
+## Image sizes and disk space requirements
+
+* Can the attached storage be analysed in place without taking a forensic image?
+* What is the size of the subject disk?
+* What is the available space on the examiner’s machine? 
+* What is the potential for image compression?
+* How much space do forensic tools need for processing and temporary files?
+* What is the estimated number of files to be extracted for further analysis?
+* How much memory and swap space is available on the examiner’s machine?
+* Is there a possibility of more subject disks being added to the same case or incident?
+* Is there an expectation to separately extract all slack or unallocated disk space?
+* Are there plans to extract individual partitions (possibly including swap)?
+* Is there a potential need to convert from one forensic format to another?
+* Do disk images need to be prepared for transport to another location?
+* Do subject disks contain virtual machine images to separately extract and analyse?
+* Do subject disks contain large numbers of compressed and archive files?
+* Are subject disks using full-disk encryption?
+* Is there a need to burn images to another disk or DVDs for storage or transport?
+* Is there a need to carve files from a damaged or partially overwritten filesystem?
+* How are backups of the examiner host performed?
 
 ## dd tools
 
