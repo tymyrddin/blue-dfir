@@ -92,6 +92,17 @@ Though DFIR is traditionally a reactive security function, tooling and advanced 
 ----
 
 .. toctree::
+   :glob:
+   :maxdepth: 1
+   :includehidden:
+   :caption: Cyber Defenders challenges
+
+   docs/cd/README.md
+   docs/cd/redline.md
+
+----
+
+.. toctree::
    :maxdepth: 1
    :includehidden:
    :caption: More practice
