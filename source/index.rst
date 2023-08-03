@@ -99,6 +99,7 @@ Though DFIR is traditionally a reactive security function, tooling and advanced 
 
    docs/cd/README.md
    docs/cd/redline.md
+   docs/cd/sysinternals.md
 
 ----
 
