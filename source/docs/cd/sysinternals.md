@@ -4,12 +4,10 @@
 
 [Cyber Defenders Sysinternals challenge](https://cyberdefenders.org/blueteam-ctf-challenges/100): A user thought they were downloading the SysInternals tool suite and attempted to open it, but the tools did not launch and became inaccessible. Since then, the user has observed that their system has gradually slowed down and become less responsive.
 
-## Tools
+## Tools used
 
-* [Eric Zimmerman's Tools](https://ericzimmerman.github.io/#!index.md) (Registry Explorer, Event Log Explorer, AppCompatCachParser)
-* VirusTotal
-* Web Cache View
-* FTK Imager
+* [Eric Zimmerman's Tools](https://ericzimmerman.github.io/#!index.md)
+* [VirusTotal](https://www.virustotal.com/gui/home/search)
 * [Autopsy](https://testlab.tymyrddin.dev/docs/dfir/autopsy-windows)
 
 ----
