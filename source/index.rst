@@ -51,6 +51,16 @@ Though DFIR is traditionally a reactive security function, tooling and advanced 
    :glob:
    :maxdepth: 1
    :includehidden:
+   :caption: Code
+
+   Developing IPA project SIEM Stack <https://github.com/tymyrddin/ipa-siem-stack>
+
+----
+
+.. toctree::
+   :glob:
+   :maxdepth: 1
+   :includehidden:
    :caption: Root-me challenges
 
    docs/root-me/README.md
