@@ -6,7 +6,7 @@ Notes on DFIR techniques.
 
 ## Why?
 
-Store information for reference later.
+DFIR processes are often undocumented and practitioners gain their skillset through informal sharing of unwritten knowledge. Collecting, storing, and sharing information for reference and progress.
 
 ## How?
 

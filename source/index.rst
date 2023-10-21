@@ -1,9 +1,7 @@
 Digital forensics and incident response (DFIR)
 ===========================================================
 
-Memory forensics ties into many disciplines in cyber investigations. From the classical investigations that focus on user artifacts via malware analysis to large-scale hunting, memory forensics has many applications in security operations.
-
-Though DFIR is traditionally a reactive security function, tooling and advanced technology such as artificial intelligence (AI) and machine learning (ML), have enabled some organisations to leverage DFIR activity to influence and inform preventative measures. In such cases, making it a component within a proactive security strategy.
+DFIR integrates Digital forensics, the investigation of cyberthreats to gather digital evidence for litigating criminals; and incident response, the detection and mitigation of cyberattacks in progress. Though DFIR is traditionally a reactive security function, tooling and advanced technology such as artificial intelligence (AI) and machine learning (ML), have enabled some organisations to leverage DFIR activity to influence and inform preventative measures. In such cases, making it a component within a proactive security strategy.
 
 .. image:: _static/images/in-progress.png
   :alt: Forever in progress ...
@@ -22,6 +20,7 @@ Though DFIR is traditionally a reactive security function, tooling and advanced 
    SquashFS <https://testlab.tymyrddin.dev/docs/dfir/squashfs>
    DFIR tools <https://testlab.tymyrddin.dev/docs/dfir/README>
    Mobile tools <https://testlab.tymyrddin.dev/docs/mobile/readme>
+   RE tools <https://testlab.tymyrddin.dev/docs/dis/README>
 
 ----
 

@@ -8,7 +8,7 @@ Malicious applications are commonly delivered through different types of channel
 * on Google Play Store
 * on alternative application stores
 
-Static analysis can be done with various tools to decompile the binary, such as [jadx](https://testlab.tymyrddin.dev/docs/dfir/jadx), [radare2](https://testlab.tymyrddin.dev/docs/dis/r2), [rizin](https://testlab.tymyrddin.dev/docs/dis/rizin), and [jeb](https://testlab.tymyrddin.dev/docs/dis/rizin). Tools such as [droidlysis](https://testlab.tymyrddin.dev/docs/dfir/droidlysis) for automatic offline static analysis can also be used.
+Static analysis can be done with various tools to decompile the binary, such as [jadx](https://testlab.tymyrddin.dev/docs/dfir/jadx), [radare2](https://testlab.tymyrddin.dev/docs/dis/r2), [rizin](https://testlab.tymyrddin.dev/docs/dis/rizin), and [jeb](https://testlab.tymyrddin.dev/docs/dis/jeb). Tools such as [droidlysis](https://testlab.tymyrddin.dev/docs/dfir/droidlysis) for automatic offline static analysis can also be used.
 
 ## Basic static analysis of samples
 
