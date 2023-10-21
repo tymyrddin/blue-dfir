@@ -1,10 +1,10 @@
-# Mobile forensics
+# Android acquisition
 
-## Extraction methods (general)
+## Extraction methods
 
 1. ***Manual data extraction***: This method is navigating the device as a normal user, using touch controls, screen controllers, and keyboards to access the information stored on the device and to record input directly from the screen. There are no special tools necessary, and the technical difficulty is modest. Disadvantages of this method are that large amounts of data will be exhausted over time, there is a risk of data adjustments being made by mistake, and it does not restore data that has been erased. It will certainly be impractical if the hardware is destroyed. It ***can*** be useful for validating outcomes. 
-2. ***Logical data extraction***: A standard interface between the workstation and the device is built using USB, Wi-Fi, or Bluetooth to send device data to the workstation. Technical complexity is minimal, but unintentional data changes may occur, and data access abstraction is high. For iOS, logical acquisition involves copying what the user has access to on their mobile, which means that data is extracted from backup. This method requires the device to be unlocked. It provides readable data, unlike some encrypted parts in the physical image. Recovering data from unallocated space is limited to data recovery from unallocated SQLite records. 
-3. ***Physical data extraction or hex dumping***: With the device in diagnostic mode, its flash memory is downloaded. This can be done with conventional interfaces, and works with devices that have little damage. Data analysis and decoding might be difficult (JTAG requires training). Access to all partitions is not guaranteed. For iOS, the copying process in this method includes the device storage and the file system. The copying is done on the bits level acquiring all data. This includes deleted data and the ability to access the unallocated space. ***Physical acquisition is not useful for iPhone 5s and later*** due to the Secure Enclave hardware feature in Apple devices. It provides an additional layer of security by its isolation from the main processor. This security mechanism keeps the user data encrypted even if the OS is compromised. File system acquisition now is used for iOS devices, which requires a jailbroken device. Jailbreaking will change the original data on the device. It is not a reversible change.
+2. ***Logical data extraction***: A standard interface between the workstation and the device is built using USB, Wi-Fi, or Bluetooth to send device data to the workstation. Technical complexity is minimal, but unintentional data changes may occur, and data access abstraction is high.  
+3. ***Physical data extraction or hex dumping***: With the device in diagnostic mode, its flash memory is downloaded. This can be done with conventional interfaces, and works with devices that have little damage. Data analysis and decoding might be difficult (JTAG requires training). Access to all partitions is not guaranteed. 
 4. ***Chip-off***: A binary image is extracted from the device's removed physical flash memory. This allows for traditional analysis, but can cause physical harm to the device. And examiners need training.
 5. ***Micro read***: An electron microscope is used to examine logic gates on a physical level and the observations turned into readable, comprehensible data. This method is extremely resource-intensive and technically challenging.
 
@@ -97,7 +97,7 @@ Enable the ***Stay awake*** setting: If the Stay awake option is selected and th
 Screen timeout is the time for which the device will be effectively active once it is unlocked. The location to access this setting varies
 depending upon the model of the device. On a Samsung Galaxy, you can set it by navigating to ***Settings -> Display -> ScreenTimeout***.
 
-## Screen lock bypassing techniques Android
+## Screen lock bypassing techniques
 
 There are several types of screen lock mechanisms offered by Android:
 
@@ -145,7 +145,7 @@ Once the recovery is flashed, boot the device in recovery mode, mount the `/data
 
 There are several automated solutions available in the market for unlocking Android devices. Commercial tools, such as [XRY](https://www.msab.com/product/xry-extract/), are capable of bypassing the screen locks, but most of them require USB debugging to be enabled.
 
-### Using Android device manager
+### Using device manager
 
 Most Android phones come with a service called Android Device Manager, which helps the owner of a device to locate their lost phone. Such services can also be used to unlock a device, ***if*** the device runs Android 8 or lower. For Android 9 or higher, you may be prompted to provide the lock screen PIN for the Android device you want to locate, so it doesn't work. 
 

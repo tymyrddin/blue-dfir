@@ -1,5 +1,11 @@
 # iOS analysis
 
+## iOS File systems
+
+Apple has created their own sets of file system formattings: AFS (Apple File System) and HFS+ (macOS Extended). The latter is the oldest and the legacy file system  which is still supported today. HFS was not future-proof as it cannot support file timestamps past February 6th, 2040. HFS+ did not support encryption at its entirety, and any device such as iMac or iPhone past iOS 10.3 will have had their file system converted from HFS+ to AFS automatically.
+
+AFS features full disk encryption, and smarter data management where a file requiring 3 blocks worth of space when copied, does not require another 3 blocks, but a reference to the file, similar to inodes in Linux.
+
 ## Time
 
 iOS devices adopted the use of Mac absolute time with iOS 5 for most of the data. [Mac absolute time](https://www.epochconverter.com/coredata) is the number of seconds that offsets the Mac epoch time, which starts on January 1, 2001.
@@ -29,6 +35,8 @@ an investigation:
   * The voicemail database is a `HomeDomain` file, and it can be found at `/private/var/mobile/Library/Voicemail/voicemail.db`, while the actual voicemail recordings are stored in the `/private/var/mobile/Library/Voicemail/` directory.
 
 ## Property lists
+
+Apple uses their own standardisation for files within their file systems: `.plist` files are property files who consist of data from anything such as preferences to application settings and data. They can be formatted as XML, or cannot be opened with a normal text editor and require a hex editor such as `HxD`.
 
 ### HomeDomain plist files
 

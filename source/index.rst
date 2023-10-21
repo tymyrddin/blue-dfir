@@ -31,18 +31,20 @@ DFIR integrates Digital forensics, the investigation of cyberthreats to gather d
    :caption: Notes
 
    docs/notes/README.md
+   docs/notes/challenges.md
    docs/notes/choreography.md
+   docs/notes/network.md
    docs/notes/preparation.md
    docs/notes/acquisition.md
+   docs/notes/android-acquisition.md
+   docs/notes/ios-acquisition.md
    docs/notes/access.md
    docs/notes/windows.md
    docs/notes/linux.md
    docs/notes/macos.md
-   docs/notes/mobile-forensics.md
    docs/notes/mobile-analysis.md
    docs/notes/ios.md
    docs/notes/android.md
-   docs/notes/network.md
    docs/notes/resources.md
 
 ----
@@ -98,6 +100,8 @@ DFIR integrates Digital forensics, the investigation of cyberthreats to gather d
    docs/thm/bob.md
    docs/thm/feelings.md
    docs/thm/nightmare.md
+   docs/thm/android-pithus.md
+   docs/thm/ios-justencase.md
 
 ----
 
