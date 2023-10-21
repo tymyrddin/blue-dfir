@@ -1,29 +1,5 @@
 # Mobile forensics
 
-Malicious applications are commonly delivered through different types of channel:
-
-* a link in a phishing email
-* a link on chat groups
-* a link on shady website
-* on Google Play Store
-* on alternative application stores
-
-## Basic static analysis of samples
-
-1. Get the sample: In some cases, a sample will have to be retrieved from a potentially compromised device. For Android, you can try using [mvt](https://testlab.tymyrddin.dev/docs/dfir/mvt) to download the APK file. If the application to be analysed is available on Google Play Store, try using [apkeep](https://testlab.tymyrddin.dev/docs/dfir/apkeep) to download it. 
-   * Note that ADB usually runs with a non-privileged account. It will not provide access to internal application data. On a rooted phone, ADB will run as root and provide access to internal application data and OS files and folders. Perhaps [BusyBox](https://testlab.tymyrddin.dev/docs/dfir/busybox) can be used.
-2. Store the sample, compute its SHA256 hash and only work on copies of the original file (to preserve its integrity).
-
-```text
-sha256sum sample.apk
-```
-
-3. Identify the type of sample: The `.apk` file extension is an Android Package file used to distribute applications via Google Play Store (or FDroid). The `.ipa` file extension indicates an iPhone application archive file. It is usually encrypted with Apple's FairPlay DRM technology, and compressed for the ARM architecture and can only be installed on an iPhone, iPod Touch, or iPad -> You may have to digitally sign the sample with your PGP key.
-4. Retrieve basic information: Use tools to extract information that will help you identify the binary and its potential origin ([jadx](https://testlab.tymyrddin.dev/docs/dfir/jadx), [androguard](https://testlab.tymyrddin.dev/docs/dfir/androguard), [Pithus (online)](https://testlab.tymyrddin.dev/docs/dfir/pithus), and a [sandbox](https://testlab.tymyrddin.dev/docs/phishing/sandbox))
-    * The certificate can help distinguish between an original application and a potentially suspicious file. Search for it on the Google Play Store and compare the signing certificate fingerprints. Digital signatures of Android applications cannot be faked. 
-    * Check if the sample was frosted by Google Play Store (Android only).
-    * Review the permissions requested and evaluate if they align with the legitimate purpose and functionality of the application.
-
 ## Extraction methods (general)
 
 1. ***Manual data extraction***: This method is navigating the device as a normal user, using touch controls, screen controllers, and keyboards to access the information stored on the device and to record input directly from the screen. There are no special tools necessary, and the technical difficulty is modest. Disadvantages of this method are that large amounts of data will be exhausted over time, there is a risk of data adjustments being made by mistake, and it does not restore data that has been erased. It will certainly be impractical if the hardware is destroyed. It ***can*** be useful for validating outcomes. 
@@ -200,7 +176,6 @@ Most of the rooting methods begin by flashing a modified recovery to the recover
 Starting from Android 7.x, Google has started strictly enforcing [verified boot](https://source.android.com/docs/security/features/verifiedboot/verified-boot) on devices, to guarantee that the software on the device is not modified before booting into the normal mode, and Samsung [patched the kernel to prevent root access](https://en.wikipedia.org/wiki/Samsung_Knox) from being granted to apps even after rooting was successful since the release of Android Oreo. This patch prevents unauthorized apps from changing the system and deters rooting. The tip of the iceberg. 
 
 There are over 12,000 different Android models from hundreds of different manufacturers. Almost all of them have been designed so that they are hard to root. For more information about rooting Android phones, check [XDA Developers](https://www.xda-developers.com/root/) for the particular model. 
-
 
 ## Resources
 
