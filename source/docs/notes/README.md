@@ -12,7 +12,6 @@ DFIR processes are often undocumented and practitioners gain their skillset thro
 
 ### General
 
-* [Challenges in digital forensics](challenges.md)
 * [Forensic choreographies](choreography.md)
 * [Network forensics](network.md)
 

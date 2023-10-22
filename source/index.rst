@@ -31,7 +31,6 @@ DFIR integrates Digital forensics, the investigation of cyberthreats to gather d
    :caption: Notes
 
    docs/notes/README.md
-   docs/notes/challenges.md
    docs/notes/choreography.md
    docs/notes/network.md
    docs/notes/preparation.md
