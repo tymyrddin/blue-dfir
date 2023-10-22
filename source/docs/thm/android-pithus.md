@@ -2,11 +2,11 @@
 
 The [static analysis sample case study](../notes/mobile-analysis.md) in this room is a trojanised application ([download sample here](https://beta.pithus.org/report/ae05bbd31820c566543addbb0ddc7b19b05be3c098d0f7aa658ab83d6f6cd5c8)) of the secure chat application [Wire](https://wire.com/en/). 
 
-First it is analysed with [Pithus (online)](https://testlab.tymyrddin.dev/docs/dfir/pithus), and then locally with [jadx](https://testlab.tymyrddin.dev/docs/dfir/jadx).
+Analysed online with [Pithus](https://testlab.tymyrddin.dev/docs/dfir/pithus).
 
-## Pithus
+----
 
-### First steps
+## First steps
 
 Name package:
 
@@ -22,7 +22,7 @@ Size of the package:
 
 ![Size of APK](../../_static/images/apk-size.png)
 
-### Getting into the APK
+## Getting into the APK
 
 ![APK Analysis](../../_static/images/apk-analysis.png)
 
@@ -88,7 +88,7 @@ Only `okio/Okio.java` is probably not malicious. The Okio library is built on to
 
 The ***Network Analysis*** tab shows domains that have been identified and are queried by the APK. More advanced malware will obfuscate the domain or IP it communicates to avoid detection, and in such cases this tab does not reveal much.
 
-### Hunting
+## Hunting
 
 Continuing the research to find other samples that are identical or similar to the first sample. This can give an understanding of the type of victims being targeted and the Tactics, Techniques, and Procedures (TTPs) malicious actor(s) are using.
 
@@ -98,7 +98,7 @@ In the ***Fingerprints*** tab, scroll down to the ***SSdeep*** and ***Dexofuzzy*
 
 Logging in, you can create Yara rules for hunting. Pithus only supports vanilla Yara for the moment. If you try to use modules, it will not work.
 
-### Hunting 2
+## Hunting 2
 
 On the home page of Pithus, there is a query field available. The ***help*** button is essential.
 
