@@ -160,5 +160,5 @@ Pithus hunt:
 * [Manifest.permission](https://developer.android.com/reference/android/Manifest.permission)
 * [Permissions on Android](https://developer.android.com/guide/topics/permissions/overview)
 * [Android app permissions explained and how to use them](https://www.androidauthority.com/app-permissions-886758/)
-* [FinSpy spyware analysis](https://defensive-lab.agency/2020/09/finspy-android/)
+* [FinSpy spyware analysis](https://defensive-lab.agency/2020/09/finspy-android/) (similar sample)
 

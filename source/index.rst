@@ -67,18 +67,8 @@ DFIR integrates Digital forensics, the investigation of cyberthreats to gather d
    docs/thm/bob.md
    docs/thm/feelings.md
    docs/thm/nightmare.md
+   docs/thm/android.md
    docs/thm/ios.md
-
-----
-
-.. toctree::
-   :glob:
-   :maxdepth: 1
-   :includehidden:
-   :caption: PiRogue tool suite
-
-   docs/pts/README.md
-   docs/pts/android.md
 
 ----
 
@@ -91,18 +81,6 @@ DFIR integrates Digital forensics, the investigation of cyberthreats to gather d
    docs/cd/README.md
    docs/cd/redline.md
    docs/cd/sysinternals.md
-
-----
-
-.. toctree::
-   :maxdepth: 1
-   :includehidden:
-   :caption: More practice
-
-   DFRWS Forensic challenges <https://dfrws.org/forensic-challenges/>
-   HN/P challenges <https://www.honeynet.org/challenges/>
-   Malware traffic analysis exercises <https://www.malware-traffic-analysis.net/training-exercises.html>
-   Geoguessr (Geolocation game) <https://www.geoguessr.com/>
 
 ----
 
@@ -125,6 +103,18 @@ DFIR integrates Digital forensics, the investigation of cyberthreats to gather d
    docs/root-me/interview1.md
    docs/root-me/c&c6.md
    docs/root-me/interview2.md
+
+----
+
+.. toctree::
+   :maxdepth: 1
+   :includehidden:
+   :caption: More practice
+
+   DFRWS Forensic challenges <https://dfrws.org/forensic-challenges/>
+   HN/P challenges <https://www.honeynet.org/challenges/>
+   Malware traffic analysis exercises <https://www.malware-traffic-analysis.net/training-exercises.html>
+   Geoguessr (Geolocation game) <https://www.geoguessr.com/>
 
 ----
 

@@ -13,28 +13,16 @@ DFIR processes are often undocumented and practitioners gain their skillset thro
 ### General
 
 * [Forensic choreographies](choreography.md)
-* [Network forensics](network.md)
-
-### Acquisition and imaging
-
 * [Preparing for acquisition](preparation.md)
+* [Network forensics](network.md)
 * [Image acquisition](acquisition.md)
 * [Android acquisition](android-acquisition.md)
 * [iOS acquisition](ios-acquisition.md)
 * [Accessing images](access.md)
-
-### Workstation analysis
-
 * [Windows analysis](windows.md)
 * [Linux analysis](linux.md)
 * [macOS analysis](macos.md)
-
-### Mobile analysis
-
 * [Mobile analysis](mobile-analysis.md)
 * [iOS analysis](ios.md)
 * [Android analysis](android.md)
-
-### More
-
 * [Resources](resources.md)
