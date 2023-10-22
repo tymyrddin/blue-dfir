@@ -100,9 +100,8 @@ DFIR integrates Digital forensics, the investigation of cyberthreats to gather d
    docs/thm/bob.md
    docs/thm/feelings.md
    docs/thm/nightmare.md
-   docs/thm/android-pithus.md
-   docs/thm/android-jadx.md
-   docs/thm/ios-justencase.md
+   docs/thm/android.md
+   docs/thm/ios.md
 
 ----
 

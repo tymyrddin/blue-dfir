@@ -2,6 +2,10 @@
 
 ## Civil society response
 
+* [Exodus Privacy](https://exodus-privacy.eu.org/en/page/what/)
+* [Association de lutte contre les cyberviolences sexistes](https://echap.eu.org/)
+* [Pithus (beta)](https://beta.pithus.org/)
+* [Mobile forensic & network analysis](https://pts-project.org/)
 * [Rightscon 2021 - How To Respond To Advanced Digital Threats Against Civil Society](https://archive.org/details/how-to-respond-to-advanced-digital-threats-against-civil-society)
 * [Computer Incident Response Center for Civil Society](https://www.civicert.org/)
 

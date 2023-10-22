@@ -28,5 +28,4 @@ sha256sum sample.apk
 
 ## Related labs
 
-* [Android malware analysis (Pithus)](../thm/android-pithus.md)
-
+* [Android malware analysis (Pithus and jadx)](../thm/android.md)
