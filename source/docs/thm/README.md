@@ -23,5 +23,4 @@ Practicing.
 * [BOB! THIS ISN'T A HORSE! (Volatility)](bob.md)
 * [That Kind of Hurt my Feelings (Volatility)](feelings.md)
 * [Hunt for a nightmare (Volatility)](nightmare.md)
-* [Android malware analysis (Pithus and jadx)](android.md)
-* [iOS forensics](ios.md)
+* [iOS forensics (SQLiteDB)](ios.md)

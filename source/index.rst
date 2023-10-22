@@ -52,38 +52,6 @@ DFIR integrates Digital forensics, the investigation of cyberthreats to gather d
    :glob:
    :maxdepth: 1
    :includehidden:
-   :caption: Code
-
-   Developing IPA project SIEM Stack <https://github.com/tymyrddin/ipa-siem-stack>
-
-----
-
-.. toctree::
-   :glob:
-   :maxdepth: 1
-   :includehidden:
-   :caption: Root-me challenges
-
-   docs/root-me/README.md
-   docs/root-me/c&c2.md
-   docs/root-me/docker-layers.md
-   docs/root-me/log-web-attack.md
-   docs/root-me/c&c5.md
-   docs/root-me/cat.md
-   docs/root-me/rubber-duck.md
-   docs/root-me/c&c3.md
-   docs/root-me/vault.md
-   docs/root-me/c&c4.md
-   docs/root-me/interview1.md
-   docs/root-me/c&c6.md
-   docs/root-me/interview2.md
-
---------
-
-.. toctree::
-   :glob:
-   :maxdepth: 1
-   :includehidden:
    :caption: TryHackMe rooms
 
    docs/thm/README.md
@@ -99,8 +67,18 @@ DFIR integrates Digital forensics, the investigation of cyberthreats to gather d
    docs/thm/bob.md
    docs/thm/feelings.md
    docs/thm/nightmare.md
-   docs/thm/android.md
    docs/thm/ios.md
+
+----
+
+.. toctree::
+   :glob:
+   :maxdepth: 1
+   :includehidden:
+   :caption: PiRogue tool suite
+
+   docs/pts/README.md
+   docs/pts/android.md
 
 ----
 
@@ -125,6 +103,28 @@ DFIR integrates Digital forensics, the investigation of cyberthreats to gather d
    HN/P challenges <https://www.honeynet.org/challenges/>
    Malware traffic analysis exercises <https://www.malware-traffic-analysis.net/training-exercises.html>
    Geoguessr (Geolocation game) <https://www.geoguessr.com/>
+
+----
+
+.. toctree::
+   :glob:
+   :maxdepth: 1
+   :includehidden:
+   :caption: Root-me challenges
+
+   docs/root-me/README.md
+   docs/root-me/c&c2.md
+   docs/root-me/docker-layers.md
+   docs/root-me/log-web-attack.md
+   docs/root-me/c&c5.md
+   docs/root-me/cat.md
+   docs/root-me/rubber-duck.md
+   docs/root-me/c&c3.md
+   docs/root-me/vault.md
+   docs/root-me/c&c4.md
+   docs/root-me/interview1.md
+   docs/root-me/c&c6.md
+   docs/root-me/interview2.md
 
 ----
 

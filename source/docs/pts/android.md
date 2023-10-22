@@ -1,13 +1,10 @@
 # Android malware analysis (Pithus and jadx)
 
-The [static analysis sample case study](../notes/mobile-analysis.md) in this room is a trojanised application ([uploaded in Pithus](https://beta.pithus.org/report/ae05bbd31820c566543addbb0ddc7b19b05be3c098d0f7aa658ab83d6f6cd5c8)).
-
+This [static analysis sample case study](../notes/mobile-analysis.md) is for a trojanised application [uploaded in Pithus (online analysis)](https://beta.pithus.org/report/ae05bbd31820c566543addbb0ddc7b19b05be3c098d0f7aa658ab83d6f6cd5c8)). The sample for local analysis with [jadx](https://testlab.tymyrddin.dev/docs/dfir/jadx) can be [downloaded here](https://pts-project.org/samples/sample_1.zip).
 
 ----
 
-## Pithus
-
-### First steps
+## First steps (Pithus)
 
 Name package:
 
@@ -23,7 +20,7 @@ Size of the package:
 
 ![Size of APK](../../_static/images/apk-size.png)
 
-### Getting into the APK
+## Getting into the APK
 
 ![APK Analysis](../../_static/images/apk-analysis.png)
 
@@ -89,7 +86,7 @@ Only `okio/Okio.java` is probably not malicious. The Okio library is built on to
 
 The ***Network Analysis*** tab shows domains that have been identified and are queried by the APK. More advanced malware will obfuscate the domain or IP it communicates to avoid detection, and in such cases this tab does not reveal much.
 
-### Hunting
+## Hunting
 
 Continuing the research to find other samples that are identical or similar to the first sample. This can give an understanding of the type of victims being targeted and the Tactics, Techniques, and Procedures (TTPs) malicious actor(s) are using.
 
@@ -99,7 +96,7 @@ In the ***Fingerprints*** tab, scroll down to the ***SSdeep*** and ***Dexofuzzy*
 
 Logging in in Pithus, you can create Yara rules for hunting. Pithus only supports vanilla Yara for the moment. If you try to use modules, it will not work.
 
-### Search
+## Search (Pithus)
 
 On the home page of Pithus, there is a query field available. The ***help*** button is essential.
 
@@ -109,17 +106,13 @@ For example, to search for the sha256 hash of the sample:
 sha256:ae05bbd31820c566543addbb0ddc7b19b05be3c098d0f7aa658ab83d6f6cd5c8
 ```
 
-To search for the non-malicious class that was identified?
+To search for the non-malicious class that was identified:
 
 ```text
 java_classes:okio/okio
 ```
 
-## jadx
-
-Local analysis with [jadx](https://testlab.tymyrddin.dev/docs/dfir/jadx)
-
-### Basic sample info
+## First steps (jadx)
 
 Package name and version:
 
@@ -129,7 +122,7 @@ Application name:
 
 ![Application name](../../_static/images/jadx2.png)
 
-### Signing certificate
+## Signing certificate
 
 ![Signing certificate information](../../_static/images/jadx3.png)
 
@@ -140,21 +133,25 @@ If permitted by your internal guidelines, you can search for the SHA256 of the s
 | E1 4F 25 46 56 FF 86 9B B7 38 AE C5 86 56 04 21 71 C8 62 5C 9D EF BC C6 EB 4F 24 D4 1D 4E C9 29 | Mon Apr 26 12:51:28 CEST 2021 |
 | 16 26 E3 F8 5D FD 84 34 F7 86 66 44 48 61 F4 E5 C8 FB 37 7A 28 4C 1C 30 4C B9 D5 85 28 8F A3 52 | Tue Feb 12 12:53:31 CET 2013  |
 
-### Requested permissions
-
-![Requested permissions](../../_static/images/jadx4.png)
+## Requested permissions
 
 Review the permissions and assess if these are legitimate permissions for the app's purpose. Instincts and gut feelings are worth investigating.
+
+![Requested permissions](../../_static/images/jadx4.png)
 
 Does this app really need to be able to write, send and receive SMS messages?
 
 ## Frosting
 
-The short analysis with Pithus gave us that the sample is ***not frosted***
+The short analysis with Pithus gave us that the sample is ***not frosted***.
 
 ## FinSpy
 
+VirusTotal results:
+
 ![VirusTotal FinSpy](../../_static/images/vt1.png)
+
+Pithus hunt:
 
 ![Pithus FinSpy](../../_static/images/pithus-finspy.png)
 
