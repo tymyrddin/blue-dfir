@@ -3,8 +3,8 @@
 Malicious applications are commonly delivered through different types of channel:
 
 * a link in a phishing email
-* a link on chat groups
-* a link on shady website
+* a link in a chat group
+* a link on a shady website
 * on Google Play Store
 * on alternative application stores
 
@@ -29,3 +29,7 @@ sha256sum sample.apk
 ## Related labs
 
 * [Android malware analysis (Pithus and jadx)](../thm/android.md)
+
+## Resources
+
+* Esther Onfroy, [Beginner guide - How to handle a potentially malicious mobile app](https://pts-project.org/guides/g3/), 2023, PTS Project
